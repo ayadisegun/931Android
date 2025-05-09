@@ -30,37 +30,3 @@ print("total rows are: ", str(totalrows), "and total column are: ", str(totalcol
 # 	print()
 
 
-def getRowCount(path, sheetName):
-	workbook = openpyxl.load_workbook(excelfile)
-	sheet = workbook[page]
-	return sheet.max_row
-
-
-def getColCount(path, sheetName):
-	workbook = openpyxl.load_workbook(excelfile)
-	sheet = workbook[page]
-	return sheet.max_column
-
-
-def getCellData(path, sheetName, rowNum, colNum):
-	workbook = openpyxl.load_workbook(excelfile)
-	sheet = workbook[page]
-	return sheet.cell(row=rowNum, column=colNum).value
-
-
-def setCellData(path, sheetName, rowNum, colNum, data):
-	workbook = openpyxl.load_workbook(excelfile)
-	sheet = workbook[page]
-	sheet.cell(row=rowNum, column=colNum).value=data
-	workbook.save(path)
-
-
-rows = getRowCount(excelfile, page)
-print(rows)
-columns = getColCount(excelfile, page)
-print(columns)
-firstUser = getCellData(excelfile,page,2,1)
-print("firstUser is: ", firstUser)
-setCellData(excelfile,page,2,1, "segun")
-firstUpdated = getCellData(excelfile,page,2,1)
-print("firstUser is updated to: ", firstUpdated)

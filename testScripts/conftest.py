@@ -24,6 +24,13 @@ from selenium.webdriver.common.actions.key_actions import KeyActions
 from selenium.webdriver.support import expected_conditions as EC
 from Scroll_utils import ScrollUtil
 from configparser import ConfigParser
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
+import openpyxl
+from Utility import read_excel_data, setCellData_path_in_script, get_Excel_data_path_in_script
 
 
 @pytest.fixture(scope='module')
@@ -63,6 +70,7 @@ def setup_function():
     driver.quit()
     appium_service.stop()
 
+
 @pytest.mark.hookwrapper
 @pytest.hookimpl(hookwrapper=True, tryfirst=True)
 def pytest_runtest_makereport(item, call):
@@ -75,6 +83,7 @@ def pytest_runtest_makereport(item, call):
 @pytest.mark.usefixtures
 @pytest.fixture
 def log_failure(request, setup_function):
+    # log failure for allure reporting
     yield
     item = request.node
     if hasattr(item, 'rep_call') and item.rep_call.failed:
@@ -83,6 +92,155 @@ def log_failure(request, setup_function):
             name="Failure_Screenshot",
             attachment_type=allure.attachment_type.PNG
         )
+
+
+def readconfig(section, key):
+    # script for reading data from config.ini for test data
+    config = ConfigParser()
+    config.read("config.ini")
+    return config.get(section, key)
+
+
+def send_mail(sender_address, sender_pass, receiver_address, subject, mail_content, attach_file_name,
+              ):
+    # sender_pass = 'Selenium@234'
+
+    # setup the MIME
+    message = MIMEMultipart()
+    message['From'] = sender_address
+    message['To'] = receiver_address
+    message['Subject'] = subject
+
+    # The subject line
+    # The body and the attachments for the mail
+    message.attach(MIMEText(mail_content, 'plain'))
+    attach_file = open(attach_file_name, 'rb')  # Open the file as binary mode
+    payload = MIMEBase('application', 'octate-stream')
+    payload.set_payload((attach_file).read())
+    encoders.encode_base64(payload)  # encode the attachment
+    # add payload header with filename
+    payload.add_header('Content-Disposition', 'attachment', filename=attach_file_name)
+    message.attach(payload)
+
+    # Create SMTP session for sending the mail
+    session = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+    session.login(sender_address, sender_pass)  # login with mail_id and password
+    text = message.as_string()
+    session.sendmail(sender_address, receiver_address, text)
+    session.quit()
+    print('Mail Sent')
+
+
+def pytest_addoption(parser):
+    parser.addoption(
+        "--excel-file",
+        action="store",
+        default="C:\\Users\\Segun\\PycharmProjects\\Android931\\testScripts\\ExcelFile.xlsx",
+        help="Path to the Excel file"
+    )
+    parser.addoption(
+        "--sheet-name",
+        action="store",
+        default="details",
+        help="Name of the sheet to read"
+    )
+
+
+def pytest_generate_tests(metafunc):
+    import pytest
+
+    global excel_file
+    global sheet_name
+    excel_file = metafunc.config.getoption("excel_file")
+    sheet_name = metafunc.config.getoption("sheet_name")
+
+    if excel_file and sheet_name:
+        headers, data_rows = read_excel_data(excel_file, sheet_name)
+
+        # Get all function parameters
+        func_params = metafunc.function.__code__.co_varnames[:metafunc.function.__code__.co_argcount]
+
+        # Detect only real fixtures (not just argument names)
+        actual_fixtures = {
+            name for name in func_params
+            if name in metafunc._arg2fixturedefs
+        }
+
+        # print(f"Function parameters: {func_params}")
+        # print(f"Actual fixtures: {actual_fixtures}")
+        # print(f"Excel headers: {headers}")
+
+        # Excel-driven parameters are those not in actual fixtures
+        excel_params = [param for param in func_params if param not in actual_fixtures]
+        print(f"Excel-driven parameters: {excel_params}")
+
+        # Find missing test params in Excel headers
+        missing_params = [param for param in excel_params if param not in headers]
+        if missing_params:
+            pytest.fail(f"The following test parameters are missing in the Excel header row: {missing_params}")
+
+        # Use only matching headers in correct order
+        matched_headers = [h for h in headers if h in excel_params]
+        print(f"Matched headers: {matched_headers}")
+        matched_headers = [h for h in headers if h in excel_params]
+        print(f"Matched headers: {matched_headers}")
+        if not matched_headers:
+            # No parameters to parametrize for this test function
+            return  # Safe to skip without failing
+
+        # Prepare data
+        filtered_data = [
+            tuple(row[headers.index(h)] for h in matched_headers)
+            for row in data_rows
+        ]
+
+        metafunc.parametrize(matched_headers, filtered_data, indirect=False)
+
+
+def setCellData(rowNum, colNum, data):
+    excelfile = excel_file
+    sheetName = sheet_name
+    workbook = openpyxl.load_workbook(excelfile)
+    sheet = workbook[sheetName]
+    sheet.cell(row=rowNum, column=colNum).value=data
+    workbook.save(excelfile)
+
+
+# def pytest_generate_tests(metafunc):
+#     # read_excel data function
+#     excel_file = metafunc.config.getoption("excel_file")
+#     sheet_name = metafunc.config.getoption("sheet_name")
+#
+#     if excel_file and sheet_name:
+#         headers, data_rows = read_excel_data(excel_file, sheet_name)
+#
+#         # Define known fixture parameters to exclude
+#         known_fixtures = {
+#             'request', 'setup_function', 'log', 'log_failure'
+#         }
+#
+#         # Get only the actual function parameters (not local variables)
+#         func_params = metafunc.function.__code__.co_varnames[:metafunc.function.__code__.co_argcount]
+#
+#         # Filter out known fixtures to get Excel-driven parameters
+#         excel_params = [param for param in func_params if param not in known_fixtures]
+#
+#         # Find missing test params in Excel headers
+#         missing_params = [param for param in excel_params if param not in headers]
+#         if missing_params:
+#             pytest.fail(f"The following test parameters are missing in the Excel header row: {missing_params}")
+#
+#         # Use only matching headers in correct order
+#         matched_headers = [h for h in headers if h in excel_params]
+#         filtered_data = [
+#             tuple(row[headers.index(h)] for h in matched_headers)
+#             for row in data_rows
+#         ]
+#
+#         metafunc.parametrize(tuple(matched_headers), filtered_data)
+
+
+
 
 @pytest.fixture
 def log():
@@ -98,29 +256,11 @@ def log():
     return loggers
 
 
-# config = ConfigParser()
-# config.read("config.ini") #filename where config is declared
-# print(config.get("locatorLogin", "username"))
-def readconfig(section, key):
-    config = ConfigParser()
-    config.read("config.ini")
-    return config.get(section, key)
-
-
-
-
-
-
-
-
-
-
-
-
-#html report hookwrapper
+# # html report hookwrapper
 # @pytest.mark.hookwrapper
 # @pytest.hookimpl(hookwrapper=True, tryfirst=True)
 # def pytest_runtest_makereport(item, call):
+#     # script successfully generating html error screenshot but not attaching to the report, debug later
 #     """
 #         Extends the PyTest Plugin to take and embed screenshot in html report, whenever test fails.
 #         :param item:
@@ -148,6 +288,4 @@ def readconfig(section, key):
 #
 # def _capture_screenshot(file_name):
 #     driver.get_screenshot_as_file(file_name)
-
-
 

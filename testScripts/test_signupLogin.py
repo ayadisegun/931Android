@@ -3,7 +3,9 @@ from _ast import Assert
 
 import allure
 import bs4.builder
+import openpyxl
 import pytest
+import requests
 from appium.common import helper
 from appium.webdriver import webdriver
 from appium.webdriver.appium_service import AppiumService
@@ -20,55 +22,19 @@ from selenium.webdriver.common.action_chains import KeyInput
 from selenium.webdriver.common.actions.key_actions import KeyActions
 from selenium.webdriver.support import expected_conditions as EC, wait
 from Scroll_utils import ScrollUtil
-from testScripts.conftest import readconfig
-from testScripts.conftest import log
+from conftest import readconfig, setCellData
+from conftest import log
+from typing import List, Tuple, Any
+from Utility import setCellData_path_in_script, get_Excel_data_path_in_script
 
 
-# from testScripts.conftest import setup_function
-
-
-def get_data():
-    return [
-
-        ["segun", "Ayadi", "Rapture", "segema@gmail", "Testing1", "techsupport@creditswitch.com", "Testing2."],
-        ["taye", "taiwo", "tailoo", "taiwo@gmail", "Testing4", "ayadisegun02@gmail.com", "Credit2."],
-
-    ]
-
-
-# def custom_assume(condition, message=None, driver=None):
-#     """
-#     Wrapper for pytest.assume that attaches a screenshot on failure.
-#
-#     Args:
-#         condition: The condition to evaluate.
-#         message: Optional message for the assumption failure.
-#         driver: Appium WebDriver instance to capture screenshot.
-#     """
-#     try:
-#         # noinspection PyUnresolvedReferences
-#         pytest.assume(condition, message)
-#     except AssertionError:
-#         if driver is not None:
-#             screenshot_name = f"Screenshot_{message}" if message else "Screenshot_Assume_Failure"
-#             allure.attach(
-#                 body=driver.get_screenshot_as_png(),
-#                 name=screenshot_name,
-#                 attachment_type=allure.attachment_type.PNG
-#             )
-#         raise  # Re-raise to ensure pytest-assume records the failure
-
-
-# @pytest.mark.usefixtures
-
-@pytest.mark.usefixtures
 @pytest.mark.starters
-@pytest.mark.parametrize("FName, LName, UName, Emails, PWord, Eml, Pd", get_data())
-def test_logosCheck(setup_function,log, log_failure, FName, LName, UName, Emails, PWord, Eml, Pd):
+# @pytest.mark.usefixtures("log", "log_failure")
+# @pytest.mark.parametrize("FName, LName, UName, Eml, PWord, Email, Pd", get_Excel_data_path_in_script())
+def test_logosCheck(setup_function, log, log_failure, FName, LName, UName, Eml, PWord, Email, Pd):
     global driver
     global wait
     driver = setup_function
-    wait = WebDriverWait(driver, timeout=10)
     # driver.find_element(By.XPATH, "//android.widget.Button[@content-desc='Login']").click()
     loginIcons = driver.find_elements(AppiumBy.XPATH, "//android.widget.ImageView")
     pytest.assume(loginIcons[0].get_attribute("displayed") == "true"), "931 logo is not displayed"
@@ -78,7 +44,6 @@ def test_logosCheck(setup_function,log, log_failure, FName, LName, UName, Emails
     pytest.assume(driver.find_element(AppiumBy.CLASS_NAME, "android.widget.Button").is_displayed), "poweredBy is not displayed"
     appVersion = driver.find_element(AppiumBy.CLASS_NAME, "android.widget.Button").get_attribute("content-desc")
     print("931 application version is: " + appVersion)
-    pytest.assume(str(appVersion) in " 931 v12")
     # emailfield = wait.until(EC.presence_of_element_located((By.XPATH, readconfig("locatorLogin", "login_emailbox"))))
     emailfield = driver.find_element(By.XPATH, readconfig("locatorLogin", "login_emailbox"))
     # pwdfield = wait.until(EC.presence_of_element_located((By.XPATH, readconfig("locatorLogin", "login_passbox"))))
@@ -88,13 +53,18 @@ def test_logosCheck(setup_function,log, log_failure, FName, LName, UName, Emails
     emailfield.click(),emailfield.clear(), emailfield.send_keys(Eml)
     pwdfield.click(), pwdfield.clear(), pwdfield.send_keys(Pd)
     cont_button.click()
+    invalidbutton = driver.find_element(By.XPATH, readconfig("locatorLogin", "invalid_credentials"))
+    invalidcred_error = invalidbutton.get_attribute("hint")
+    setCellData(1, 8, "Errors")
+    setCellData(2, 8, "invalid Credentials")
+    invalidbutton.click()
     log.error("log message")
 
 
-@pytest.mark.usefixtures
-@pytest.mark.starters
-@pytest.mark.parametrize("FName, LName, UName, Emails, PWord, Eml, Pd", get_data())
-def test_signUp(setup_function,log_failure, FName, LName, UName, Emails, PWord, Eml, Pd):
+# @pytest.mark.starters
+# @pytest.mark.usefixtures("log", "log_failure")
+# @pytest.mark.parametrize("FName, LName, UName, Eml, PWord, Email, Pd", get_Excel_data_path_in_script())
+def test_signUp(setup_function, log, log_failure, FName, LName, UName, Eml, PWord, Email, Pd):
     # sign up
     # driver = setup_function
     driver.find_element(By.XPATH, "//android.view.View[@content-desc='Don’t have an account?  Sign Up']").click()
@@ -126,7 +96,7 @@ def test_signUp(setup_function,log_failure, FName, LName, UName, Emails, PWord, 
     FNfield.click(), FNfield.send_keys(FName)
     LNfield.click(), LNfield.send_keys(LName)
     UN.click(), UN.send_keys(UName)
-    Email.click(), Email.send_keys(Emails)
+    Email.click(), Email.send_keys(Eml)
     driver.press_keycode(4)
     ScrollUtil.scrollUp(1, driver)
     Pwd.click(), Pwd.send_keys(PWord)
@@ -150,8 +120,8 @@ def test_login_page_checkbox(setup_function, log_failure):
 
 
 @pytest.mark.usefixtures
-@pytest.mark.parametrize("FName, LName,UName, Emails, PWord, Eml, Pd", get_data())
-def test_forgot_password(setup_function,log_failure, FName, LName, UName, Emails, PWord, Eml, Pd):
+# @pytest.mark.parametrize("FName, LName,UName, Eml, PWord, Email, Pd", get_data())
+def test_forgot_password(setup_function,log_failure, FName, LName, UName, Eml, PWord, Email, Pd):
     # forgot password
     # driver = setup_function
     assert (driver.find_element(By.XPATH, "//android.view.View[@content-desc='Forgot Password']")).is_enabled(), "F-pswd not displayed"
@@ -159,7 +129,7 @@ def test_forgot_password(setup_function,log_failure, FName, LName, UName, Emails
     em = ScrollUtil.click_at_coordinates(120, 1352, driver)
     time.sleep(3)
     # em.send_keys("aya02@gmailcom")
-    ScrollUtil.inputText(Emails, driver)
+    ScrollUtil.inputText(Eml, driver)
     time.sleep(1)
     driver.find_element(By.XPATH, "//android.widget.Button[@content-desc='Continue']").click()
     assert(driver.find_element(By.XPATH, "//android.view.View[@content-desc='Enter a valid email Address']")).is_displayed(), "Enter a valid email Address Error expected"
@@ -172,8 +142,8 @@ def test_forgot_password(setup_function,log_failure, FName, LName, UName, Emails
 
 
 @pytest.mark.usefixtures
-@pytest.mark.parametrize("FName, LName, UName, Emails, PWord, Eml, Pd", get_data())
-def test_login(setup_function,log_failure,FName, LName, UName, Emails, PWord, Eml, Pd):
+# @pytest.mark.parametrize("FName, LName, UName, Eml, PWord, Email, Pd", get_data())
+def test_login(setup_function,log_failure,FName, LName, UName, Eml, PWord, Email, Pd):
     # global driver
     # driver = setup_function
     emailfield = driver.find_element(By.XPATH, "//android.widget.EditText")
@@ -184,7 +154,7 @@ def test_login(setup_function,log_failure,FName, LName, UName, Emails, PWord, Em
     assert (driver.find_element(By.XPATH, "//android.view.View[@content-desc='Email address/Phone Number cannot be empty']")).get_attribute("displayed") == "true", "empty email/phone number error not returned"
     # pytest.assume((driver.find_element(By.XPATH, "//android.view.View[@content-desc='Password cannot be empty']")).get_attribute("enabled") == "true"), "empty password error not returned"
     emailfield.click()
-    emailfield.send_keys(Eml)
+    emailfield.send_keys(Email)
     pwdfield = driver.find_element(By.XPATH, "//android.widget.EditText[@hint='Enter Password']")
     pwdfield.click()
     pwdfield.send_keys(Pd)
