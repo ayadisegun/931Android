@@ -292,4 +292,5 @@ class ScrollUtil:
 # volume up 24
 # volume down 25
 #delete - 67
+#Enter - (66)
 

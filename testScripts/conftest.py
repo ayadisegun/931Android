@@ -39,26 +39,18 @@ def setup_function():
     appium_service = AppiumService()
     appium_service.start()
 
-    desired_caps = dict(
-        deviceName='Rapt',
-        platformName='Android',
-        browserName='Chrome',
-        automationName='UiAutomator2',
-        chromedriverExecutable='C:\\Program Files\\Python311\\Scripts\\chromedriver131.exe',
-    )
-
-    desired_cap = {}
-    desired_caps['deviceName'] = 'Android'
-    desired_caps['platformName'] = 'Android'
-    desired_caps['browserName'] = 'Chrome'
-    desired_caps['automationName'] = 'UiAutomator2'
-    desired_caps['chromedriverExecutable'] = 'C:\\Program Files\\Python311\\Scripts\\chromedriver131.exe'
-    desired_caps['appPackage'] = 'com.switchto931.mobile'
-    desired_caps['appActivity'] = '.MainActivity'
-    desired_caps['noReset'] = True
-
-    # capabilities_options = UiAutomator2Options().load_capabilities(desired_caps)
-    capabilities_options = UiAutomator2Options().load_capabilities(desired_cap)
+    desired_caps = {
+        'deviceName': 'Android',
+        'platformName': 'Android',
+        # 'browserName': 'Chrome',
+        'automationName': 'UiAutomator2',
+        'chromedriverExecutable': 'C:\\Program Files\\Python311\\Scripts\\chromedriver131.exe',
+        # 'chromedriverExecutable': get_chromedriver_path(),  # Use a function for portability
+        'appPackage': 'com.switchto931.mobile',
+        'appActivity': '.MainActivity',
+        'noReset': True
+    }
+    capabilities_options = UiAutomator2Options().load_capabilities(desired_caps)
     global driver
     driver = webdriver.Remote('http://127.0.0.1:4723', options=capabilities_options)
     driver.implicitly_wait(10)
@@ -69,6 +61,70 @@ def setup_function():
     driver.press_keycode(3)
     driver.quit()
     appium_service.stop()
+
+
+def get_chromedriver_path():
+    """Return the chromedriver path based on environment or configuration."""
+    # Example: Use environment variable or config file for portability
+    return os.getenv('CHROMEDRIVER_PATH', 'C:\\Program Files\\Python311\\Scripts\\chromedriver131.exe')
+
+
+@pytest.fixture(params=["device1", "device2"], scope="module")
+def setup_function_parallel(request):
+    global appium_service
+    appium_service = AppiumService()
+    appium_service.start()
+    global driver
+    if request.param == "device1":
+        desired_caps = {
+            'deviceName': 'Android',
+            'platformName': 'Android',
+            'udid': '076452521J102102',
+            'browserName': 'Chrome',
+            'automationName': 'UiAutomator2',
+            # 'chromedriverExecutable': 'C:\\Program Files\\Python311\\Scripts\\chromedriver131.exe',
+            'chromedriverExecutable': get_chromedriver_path(),  # Use a function for portability
+            # 'appPackage': 'com.switchto931.mobile',
+            # 'appActivity': '.MainActivity',
+            'noReset': True, }
+        capabilities_options = UiAutomator2Options().load_capabilities(desired_caps)
+        driver = webdriver.Remote('http://127.0.0.1:4723', options=capabilities_options)
+    if request.param == "device2":
+        desired_caps = {
+                'deviceName': 'Android',
+                'platformName': 'Android',
+                'udid': 'emulator-5554',
+                'browserName': 'Chrome',
+                'automationName': 'UiAutomator2',
+                # 'chromedriverExecutable': 'C:\\Program Files\\Python311\\Scripts\\chromedriver131.exe',
+                'chromedriverExecutable': get_chromedriver_path(),  # Use a function for portability
+                # 'appPackage': 'com.switchto931.mobile',
+                # 'appActivity': '.MainActivity',
+                'noReset': True, }
+        capabilities_options = UiAutomator2Options().load_capabilities(desired_caps)
+        driver = webdriver.Remote('http://127.0.0.1:4724', options=capabilities_options)
+    driver.implicitly_wait(10)
+    touch_actions = ActionChains(driver)
+    global wait
+    wait = WebDriverWait(driver, 10)
+    yield driver
+    driver.press_keycode(3)
+    driver.quit()
+    appium_service.stop()
+
+
+# DEVICE_CONFIGS = {
+#     "device1": {
+#         "udid": "076452521J102102",
+#         "port": 4723,
+#         "deviceName": "Android",
+#     },
+#     "device2": {
+#         "udid": "074972524K000075",
+#         "port": 4724,
+#         "deviceName": "Android",
+#     }
+# }
 
 
 @pytest.mark.hookwrapper
@@ -197,17 +253,10 @@ def pytest_generate_tests(metafunc):
         metafunc.parametrize(matched_headers, filtered_data, indirect=False)
 
 
-def setCellData(rowNum, colNum, data):
-    excelfile = excel_file
-    sheetName = sheet_name
-    workbook = openpyxl.load_workbook(excelfile)
-    sheet = workbook[sheetName]
-    sheet.cell(row=rowNum, column=colNum).value=data
-    workbook.save(excelfile)
-
-
 # def pytest_generate_tests(metafunc):
 #     # read_excel data function
+#     global excel_file
+#     global sheet_name
 #     excel_file = metafunc.config.getoption("excel_file")
 #     sheet_name = metafunc.config.getoption("sheet_name")
 #
@@ -216,7 +265,7 @@ def setCellData(rowNum, colNum, data):
 #
 #         # Define known fixture parameters to exclude
 #         known_fixtures = {
-#             'request', 'setup_function', 'log', 'log_failure'
+#             'request', 'setup_function', 'setup_function_parallel', 'log', 'log_failure'
 #         }
 #
 #         # Get only the actual function parameters (not local variables)
@@ -239,7 +288,50 @@ def setCellData(rowNum, colNum, data):
 #
 #         metafunc.parametrize(tuple(matched_headers), filtered_data)
 
+# @pytest.fixture(params=["device1", "device2"], scope="module")
+# def setup_function_parallel(request):
+#     device = request.param
+#     config = DEVICE_CONFIGS[device]
+#
+#     # Start Appium service for the specific device
+#     appium_service = AppiumService()
+#     appium_service.start(
+#         args=['--address', '127.0.0.1', '--port', str(config['port']), '--base-path', '/']
+#     )
+#
+#     # Common desired capabilities
+#     desired_caps = {
+#         'deviceName': config['deviceName'],
+#         'platformName': 'Android',
+#         'udid': config['udid'],
+#         'automationName': 'UiAutomator2',
+#         'chromedriverExecutable': get_chromedriver_path(),
+#         'appPackage': 'com.switchto931.mobile',
+#         'appActivity': '.MainActivity',
+#         'noReset': True,
+#     }
+#
+#     # Load capabilities and initialize driver
+#     capabilities_options = UiAutomator2Options().load_capabilities(desired_caps)
+#     global driver
+#     driver = webdriver.Remote(f'http://127.0.0.1:{config["port"]}', options=capabilities_options)
+#     driver.implicitly_wait(10)
+#     touch_actions = ActionChains(driver)
+#     global wait
+#     wait = WebDriverWait(driver, 10)
+#     yield driver
+#     driver.press_keycode(3)
+#     driver.quit()
+#     appium_service.stop()
 
+
+def setCellData(rowNum, colNum, data):
+    excelfile = excel_file
+    sheetName = sheet_name
+    workbook = openpyxl.load_workbook(excelfile)
+    sheet = workbook[sheetName]
+    sheet.cell(row=rowNum, column=colNum).value=data
+    workbook.save(excelfile)
 
 
 @pytest.fixture
@@ -256,11 +348,12 @@ def log():
     return loggers
 
 
-# # html report hookwrapper
+# # script successfully generating html error screenshot but not attaching to the report, debug later
+# html report hookwrapper
 # @pytest.mark.hookwrapper
 # @pytest.hookimpl(hookwrapper=True, tryfirst=True)
 # def pytest_runtest_makereport(item, call):
-#     # script successfully generating html error screenshot but not attaching to the report, debug later
+
 #     """
 #         Extends the PyTest Plugin to take and embed screenshot in html report, whenever test fails.
 #         :param item:

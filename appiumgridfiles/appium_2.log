@@ -1,0 +1,1525 @@
+2021-05-24 19:27:30:200 [Appium] Welcome to Appium v1.21.0
+2021-05-24 19:27:30:201 [Appium] Non-default server args:
+2021-05-24 19:27:30:202 [Appium]   port: 4725
+2021-05-24 19:27:30:202 [Appium]   sessionOverride: true
+2021-05-24 19:27:30:202 [Appium]   logFile: C:\Users\way2automation\Desktop\appiumgridfiles\appium_2.log
+2021-05-24 19:27:30:203 [Appium]   nodeconfig: C:\Users\WAY2AUTOMATION\Desktop\appiumgridfiles\all.json
+2021-05-24 19:27:30:203 [Appium]   udid: 8e006adb
+2021-05-24 19:27:30:204 [Appium] Deprecated server args:
+2021-05-24 19:27:30:204 [Appium]   -U => --default-capabilities
+2021-05-24 19:27:30:204 [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2021-05-24 19:27:30:204 [Appium]   udid: 8e006adb
+2021-05-24 19:27:30:241 [Appium] Starting auto register thread for the grid. Will try to register every 5000 ms.
+2021-05-24 19:27:30:242 [Appium] Appium REST http interface listener started on 0.0.0.0:4725
+2021-05-24 19:27:35:431 [Appium] Appium successfully registered with the the grid on http://localhost:4444
+2021-05-24 19:27:37:445 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:37:446 [HTTP] {}
+2021-05-24 19:27:37:449 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:37:450 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:37:453 [HTTP] <-- GET /wd/hub/status 200 7 ms - 68
+2021-05-24 19:27:37:453 [HTTP] 
+2021-05-24 19:27:39:460 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:39:461 [HTTP] {}
+2021-05-24 19:27:39:462 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:39:465 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:39:485 [HTTP] <-- GET /wd/hub/status 200 8 ms - 68
+2021-05-24 19:27:39:487 [HTTP] 
+2021-05-24 19:27:41:486 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:41:488 [HTTP] {}
+2021-05-24 19:27:41:499 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:41:501 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:41:504 [HTTP] <-- GET /wd/hub/status 200 16 ms - 68
+2021-05-24 19:27:41:505 [HTTP] 
+2021-05-24 19:27:43:522 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:43:529 [HTTP] {}
+2021-05-24 19:27:43:530 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:43:531 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:43:532 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:27:43:533 [HTTP] 
+2021-05-24 19:27:45:545 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:45:548 [HTTP] {}
+2021-05-24 19:27:45:554 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:45:555 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:45:557 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:27:45:558 [HTTP] 
+2021-05-24 19:27:46:544 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:46:551 [HTTP] {}
+2021-05-24 19:27:46:551 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:46:558 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:46:562 [HTTP] <-- GET /wd/hub/status 200 16 ms - 68
+2021-05-24 19:27:46:563 [HTTP] 
+2021-05-24 19:27:47:570 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:47:573 [HTTP] {}
+2021-05-24 19:27:47:588 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:47:593 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:47:615 [HTTP] <-- GET /wd/hub/status 200 26 ms - 68
+2021-05-24 19:27:47:622 [HTTP] 
+2021-05-24 19:27:49:613 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:49:617 [HTTP] {}
+2021-05-24 19:27:49:627 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:49:630 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:49:633 [HTTP] <-- GET /wd/hub/status 200 20 ms - 68
+2021-05-24 19:27:49:634 [HTTP] 
+2021-05-24 19:27:51:645 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:51:649 [HTTP] {}
+2021-05-24 19:27:51:662 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:51:665 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:51:670 [HTTP] <-- GET /wd/hub/status 200 22 ms - 68
+2021-05-24 19:27:51:670 [HTTP] 
+2021-05-24 19:27:53:673 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:53:675 [HTTP] {}
+2021-05-24 19:27:53:676 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:53:682 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:53:683 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:27:53:684 [HTTP] 
+2021-05-24 19:27:55:702 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:55:705 [HTTP] {}
+2021-05-24 19:27:55:711 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:55:712 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:55:713 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:27:55:714 [HTTP] 
+2021-05-24 19:27:57:730 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:57:736 [HTTP] {}
+2021-05-24 19:27:57:745 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:57:746 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:57:750 [HTTP] <-- GET /wd/hub/status 200 17 ms - 68
+2021-05-24 19:27:57:751 [HTTP] 
+2021-05-24 19:27:59:758 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:27:59:760 [HTTP] {}
+2021-05-24 19:27:59:766 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:27:59:766 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:27:59:768 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:27:59:769 [HTTP] 
+2021-05-24 19:28:01:774 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:01:776 [HTTP] {}
+2021-05-24 19:28:01:782 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:01:783 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:01:785 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:28:01:785 [HTTP] 
+2021-05-24 19:28:03:798 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:03:801 [HTTP] {}
+2021-05-24 19:28:03:807 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:03:808 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:03:811 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:28:03:813 [HTTP] 
+2021-05-24 19:28:05:816 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:05:819 [HTTP] {}
+2021-05-24 19:28:05:825 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:05:826 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:05:827 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:28:05:828 [HTTP] 
+2021-05-24 19:28:07:839 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:07:846 [HTTP] {}
+2021-05-24 19:28:07:846 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:07:847 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:07:848 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:28:07:849 [HTTP] 
+2021-05-24 19:28:09:863 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:09:867 [HTTP] {}
+2021-05-24 19:28:09:872 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:09:874 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:09:876 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:28:09:877 [HTTP] 
+2021-05-24 19:28:11:883 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:11:885 [HTTP] {}
+2021-05-24 19:28:11:886 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:11:892 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:11:898 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:28:11:903 [HTTP] 
+2021-05-24 19:28:13:911 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:13:914 [HTTP] {}
+2021-05-24 19:28:13:921 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:13:922 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:13:924 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:28:13:925 [HTTP] 
+2021-05-24 19:28:15:943 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:15:949 [HTTP] {}
+2021-05-24 19:28:15:956 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:15:957 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:15:959 [HTTP] <-- GET /wd/hub/status 200 15 ms - 68
+2021-05-24 19:28:15:961 [HTTP] 
+2021-05-24 19:28:17:970 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:17:974 [HTTP] {}
+2021-05-24 19:28:17:985 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:17:986 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:17:989 [HTTP] <-- GET /wd/hub/status 200 18 ms - 68
+2021-05-24 19:28:17:991 [HTTP] 
+2021-05-24 19:28:20:000 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:20:004 [HTTP] {}
+2021-05-24 19:28:20:012 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:20:017 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:20:024 [HTTP] <-- GET /wd/hub/status 200 18 ms - 68
+2021-05-24 19:28:20:025 [HTTP] 
+2021-05-24 19:28:22:042 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:22:047 [HTTP] {}
+2021-05-24 19:28:22:048 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:22:054 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:22:055 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:28:22:056 [HTTP] 
+2021-05-24 19:28:24:066 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:24:069 [HTTP] {}
+2021-05-24 19:28:24:069 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:24:076 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:24:077 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:28:24:078 [HTTP] 
+2021-05-24 19:28:26:085 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:26:089 [HTTP] {}
+2021-05-24 19:28:26:090 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:26:097 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:26:098 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:28:26:098 [HTTP] 
+2021-05-24 19:28:28:103 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:28:106 [HTTP] {}
+2021-05-24 19:28:28:113 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:28:114 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:28:115 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:28:28:116 [HTTP] 
+2021-05-24 19:28:30:120 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:30:123 [HTTP] {}
+2021-05-24 19:28:30:129 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:30:130 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:30:131 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:28:30:132 [HTTP] 
+2021-05-24 19:28:32:151 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:32:164 [HTTP] {}
+2021-05-24 19:28:32:165 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:32:167 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:32:171 [HTTP] <-- GET /wd/hub/status 200 18 ms - 68
+2021-05-24 19:28:32:172 [HTTP] 
+2021-05-24 19:28:34:176 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:34:180 [HTTP] {}
+2021-05-24 19:28:34:186 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:34:187 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:34:197 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:28:34:198 [HTTP] 
+2021-05-24 19:28:36:200 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:36:203 [HTTP] {}
+2021-05-24 19:28:36:204 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:36:210 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:36:211 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:28:36:212 [HTTP] 
+2021-05-24 19:28:38:232 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:38:235 [HTTP] {}
+2021-05-24 19:28:38:241 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:38:243 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:38:244 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:28:38:245 [HTTP] 
+2021-05-24 19:28:40:258 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:40:264 [HTTP] {}
+2021-05-24 19:28:40:268 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:40:271 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:40:288 [HTTP] <-- GET /wd/hub/status 200 16 ms - 68
+2021-05-24 19:28:40:289 [HTTP] 
+2021-05-24 19:28:42:291 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:42:294 [HTTP] {}
+2021-05-24 19:28:42:301 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:42:301 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:42:305 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:28:42:312 [HTTP] 
+2021-05-24 19:28:44:311 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:44:316 [HTTP] {}
+2021-05-24 19:28:44:322 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:44:323 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:44:324 [HTTP] <-- GET /wd/hub/status 200 14 ms - 68
+2021-05-24 19:28:44:325 [HTTP] 
+2021-05-24 19:28:46:334 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:46:337 [HTTP] {}
+2021-05-24 19:28:46:344 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:46:345 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:46:347 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:28:46:348 [HTTP] 
+2021-05-24 19:28:48:356 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:48:364 [HTTP] {}
+2021-05-24 19:28:48:365 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:48:372 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:48:375 [HTTP] <-- GET /wd/hub/status 200 18 ms - 68
+2021-05-24 19:28:48:376 [HTTP] 
+2021-05-24 19:28:50:386 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:50:390 [HTTP] {}
+2021-05-24 19:28:50:396 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:50:397 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:50:406 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:28:50:413 [HTTP] 
+2021-05-24 19:28:52:413 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:52:416 [HTTP] {}
+2021-05-24 19:28:52:422 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:52:423 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:52:425 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:28:52:426 [HTTP] 
+2021-05-24 19:28:54:431 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:54:435 [HTTP] {}
+2021-05-24 19:28:54:441 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:54:443 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:54:452 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:28:54:459 [HTTP] 
+2021-05-24 19:28:56:458 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:56:461 [HTTP] {}
+2021-05-24 19:28:56:462 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:56:468 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:56:469 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:28:56:470 [HTTP] 
+2021-05-24 19:28:58:481 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:28:58:484 [HTTP] {}
+2021-05-24 19:28:58:485 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:28:58:491 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:28:58:493 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:28:58:494 [HTTP] 
+2021-05-24 19:29:00:503 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:00:506 [HTTP] {}
+2021-05-24 19:29:00:506 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:00:512 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:00:514 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:29:00:514 [HTTP] 
+2021-05-24 19:29:02:530 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:02:533 [HTTP] {}
+2021-05-24 19:29:02:534 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:02:541 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:02:542 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:29:02:543 [HTTP] 
+2021-05-24 19:29:04:550 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:04:553 [HTTP] {}
+2021-05-24 19:29:04:554 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:04:560 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:04:562 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:29:04:562 [HTTP] 
+2021-05-24 19:29:06:570 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:06:574 [HTTP] {}
+2021-05-24 19:29:06:591 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:06:599 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:06:602 [HTTP] <-- GET /wd/hub/status 200 31 ms - 68
+2021-05-24 19:29:06:607 [HTTP] 
+2021-05-24 19:29:08:620 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:08:624 [HTTP] {}
+2021-05-24 19:29:08:630 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:08:631 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:08:632 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:29:08:632 [HTTP] 
+2021-05-24 19:29:10:647 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:10:650 [HTTP] {}
+2021-05-24 19:29:10:656 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:10:657 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:10:658 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:29:10:660 [HTTP] 
+2021-05-24 19:29:12:663 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:12:664 [HTTP] {}
+2021-05-24 19:29:12:670 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:12:671 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:12:672 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
+2021-05-24 19:29:12:672 [HTTP] 
+2021-05-24 19:29:14:685 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:14:687 [HTTP] {}
+2021-05-24 19:29:14:693 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:14:695 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:14:696 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:29:14:697 [HTTP] 
+2021-05-24 19:29:16:710 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:16:712 [HTTP] {}
+2021-05-24 19:29:16:713 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:16:719 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:16:720 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:29:16:720 [HTTP] 
+2021-05-24 19:29:18:729 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:18:731 [HTTP] {}
+2021-05-24 19:29:18:732 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:18:738 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:18:739 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:29:18:740 [HTTP] 
+2021-05-24 19:29:20:754 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:20:759 [HTTP] {}
+2021-05-24 19:29:20:765 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:20:766 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:20:767 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:29:20:768 [HTTP] 
+2021-05-24 19:29:22:775 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:22:777 [HTTP] {}
+2021-05-24 19:29:22:783 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:22:784 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:22:785 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:29:22:788 [HTTP] 
+2021-05-24 19:29:23:729 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:23:740 [HTTP] {}
+2021-05-24 19:29:23:768 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:23:787 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:23:789 [HTTP] <-- GET /wd/hub/status 200 60 ms - 68
+2021-05-24 19:29:23:794 [HTTP] 
+2021-05-24 19:29:24:802 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:24:805 [HTTP] {}
+2021-05-24 19:29:24:806 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:24:812 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:24:814 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:29:24:820 [HTTP] 
+2021-05-24 19:29:26:713 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:26:745 [HTTP] {}
+2021-05-24 19:29:26:753 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:26:762 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:26:766 [HTTP] <-- GET /wd/hub/status 200 51 ms - 68
+2021-05-24 19:29:26:768 [HTTP] 
+2021-05-24 19:29:26:822 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:26:833 [HTTP] {}
+2021-05-24 19:29:26:834 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:26:838 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:26:846 [HTTP] <-- GET /wd/hub/status 200 17 ms - 68
+2021-05-24 19:29:26:848 [HTTP] 
+2021-05-24 19:29:28:861 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:28:866 [HTTP] {}
+2021-05-24 19:29:28:872 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:28:873 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:28:874 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:29:28:874 [HTTP] 
+2021-05-24 19:29:30:884 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:30:886 [HTTP] {}
+2021-05-24 19:29:30:887 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:30:893 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:30:894 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
+2021-05-24 19:29:30:895 [HTTP] 
+2021-05-24 19:29:32:902 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:32:905 [HTTP] {}
+2021-05-24 19:29:32:906 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:32:911 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:32:912 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:29:32:913 [HTTP] 
+2021-05-24 19:29:34:919 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:34:932 [HTTP] {}
+2021-05-24 19:29:34:934 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:34:938 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:34:940 [HTTP] <-- GET /wd/hub/status 200 20 ms - 68
+2021-05-24 19:29:34:941 [HTTP] 
+2021-05-24 19:29:36:953 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:36:963 [HTTP] {}
+2021-05-24 19:29:36:963 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:36:964 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:36:966 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:29:36:966 [HTTP] 
+2021-05-24 19:29:38:982 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:38:987 [HTTP] {}
+2021-05-24 19:29:38:996 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:38:998 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:39:000 [HTTP] <-- GET /wd/hub/status 200 18 ms - 68
+2021-05-24 19:29:39:001 [HTTP] 
+2021-05-24 19:29:41:016 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:41:019 [HTTP] {}
+2021-05-24 19:29:41:021 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:41:027 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:41:030 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:29:41:036 [HTTP] 
+2021-05-24 19:29:43:039 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:43:051 [HTTP] {}
+2021-05-24 19:29:43:058 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:43:074 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:43:081 [HTTP] <-- GET /wd/hub/status 200 39 ms - 68
+2021-05-24 19:29:43:082 [HTTP] 
+2021-05-24 19:29:45:096 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:45:099 [HTTP] {}
+2021-05-24 19:29:45:105 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:45:107 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:45:109 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:29:45:111 [HTTP] 
+2021-05-24 19:29:47:123 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:47:126 [HTTP] {}
+2021-05-24 19:29:47:128 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:47:134 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:47:135 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:29:47:136 [HTTP] 
+2021-05-24 19:29:47:733 [HTTP] Request idempotency key: bfc4789e-316a-467b-8e67-24e3e92eec6b
+2021-05-24 19:29:47:776 [HTTP] --> POST /wd/hub/session
+2021-05-24 19:29:47:793 [HTTP] {"desiredCapabilities":{"browserName":"Chrome","server:CONFIG_UUID":"54b33bc0-8598-4b19-9ae5-9c020666dfd8","platformName":"android","udid":"emulator-5554","deviceName":"Android"},"capabilities":{"firstMatch":[{"browserName":"Chrome","platformName":"android","server:CONFIG_UUID":"54b33bc0-8598-4b19-9ae5-9c020666dfd8"}]}}
+2021-05-24 19:29:47:797 [W3C] Calling AppiumDriver.createSession() with args: [{"browserName":"Chrome","server:CONFIG_UUID":"54b33bc0-8598-4b19-9ae5-9c020666dfd8","platformName":"android","udid":"emulator-5554","deviceName":"Android"},null,{"firstMatch":[{"browserName":"Chrome","platformName":"android","server:CONFIG_UUID":"54b33bc0-8598-4b19-9ae5-9c020666dfd8"}]}]
+2021-05-24 19:29:47:815 [BaseDriver] Event 'newSessionRequested' logged at 1621884587799 (00:59:47 GMT+0530 (India Standard Time))
+2021-05-24 19:29:47:831 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2021-05-24 19:29:47:832 [BaseDriver]   udid
+2021-05-24 19:29:47:860 [Appium] The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["deviceName"]
+2021-05-24 19:29:47:866 [Appium] Trying to fix W3C capabilities by merging them with JSONWP caps
+2021-05-24 19:29:47:883 [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2021-05-24 19:29:47:888 [BaseDriver]   deviceName
+2021-05-24 19:29:47:897 [BaseDriver]   udid
+2021-05-24 19:29:47:915 [Appium] 
+2021-05-24 19:29:47:925 [Appium] ======================================================================
+2021-05-24 19:29:47:934 [Appium]   DEPRECATION WARNING:
+2021-05-24 19:29:47:943 [Appium] 
+2021-05-24 19:29:47:950 [Appium]   The 'automationName' capability was not provided in the desired 
+2021-05-24 19:29:47:960 [Appium]   capabilities for this Android session
+2021-05-24 19:29:47:992 [Appium] 
+2021-05-24 19:29:47:999 [Appium]   Setting 'automationName=UiAutomator2' by default and using the 
+2021-05-24 19:29:48:003 [Appium]   UiAutomator2 Driver
+2021-05-24 19:29:48:016 [Appium] 
+2021-05-24 19:29:48:031 [Appium]   The next major version of Appium (2.x) will **require** the 
+2021-05-24 19:29:48:036 [Appium]   'automationName' capability to be set for all sessions on all 
+2021-05-24 19:29:48:065 [Appium]   platforms
+2021-05-24 19:29:48:067 [Appium] 
+2021-05-24 19:29:48:070 [Appium]   In previous versions (Appium <= 1.13.x), the default was 
+2021-05-24 19:29:48:071 [Appium]   'automationName=UiAutomator1'
+2021-05-24 19:29:48:073 [Appium] 
+2021-05-24 19:29:48:075 [Appium]   If you wish to use that automation instead of UiAutomator2, please 
+2021-05-24 19:29:48:077 [Appium]   add 'automationName=UiAutomator1' to your desired capabilities
+2021-05-24 19:29:48:100 [Appium] 
+2021-05-24 19:29:48:102 [Appium]   For more information about drivers, please visit 
+2021-05-24 19:29:48:103 [Appium]   http://appium.io/docs/en/about-appium/intro/ and explore the 
+2021-05-24 19:29:48:104 [Appium]   'Drivers' menu
+2021-05-24 19:29:48:106 [Appium] 
+2021-05-24 19:29:48:108 [Appium] ======================================================================
+2021-05-24 19:29:48:109 [Appium] 
+2021-05-24 19:29:48:687 [Appium] Appium v1.21.0 creating new AndroidUiautomator2Driver (v1.65.0) session
+2021-05-24 19:29:48:690 [Appium] There are no active sessions for cleanup
+2021-05-24 19:29:48:716 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2021-05-24 19:29:48:721 [BaseDriver] Creating session with W3C capabilities: {
+2021-05-24 19:29:48:729 [BaseDriver]   "alwaysMatch": {
+2021-05-24 19:29:48:739 [BaseDriver]     "appium:deviceName": "Android",
+2021-05-24 19:29:48:741 [BaseDriver]     "browserName": "Chrome",
+2021-05-24 19:29:48:742 [BaseDriver]     "platformName": "android",
+2021-05-24 19:29:48:744 [BaseDriver]     "server:CONFIG_UUID": "54b33bc0-8598-4b19-9ae5-9c020666dfd8",
+2021-05-24 19:29:48:746 [BaseDriver]     "appium:udid": "8e006adb"
+2021-05-24 19:29:48:753 [BaseDriver]   },
+2021-05-24 19:29:48:755 [BaseDriver]   "firstMatch": [
+2021-05-24 19:29:48:757 [BaseDriver]     {}
+2021-05-24 19:29:48:761 [BaseDriver]   ]
+2021-05-24 19:29:48:774 [BaseDriver] }
+2021-05-24 19:29:48:787 [BaseDriver] The following capabilities were provided, but are not recognized by Appium:
+2021-05-24 19:29:48:788 [BaseDriver]   server:CONFIG_UUID
+2021-05-24 19:29:48:790 [BaseDriver] Session created with session id: 562bd226-8e0a-4a31-bf29-b3c2845a95c0
+2021-05-24 19:29:48:811 [UiAutomator2] We're going to run a Chrome-based session
+2021-05-24 19:29:48:814 [UiAutomator2] Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+2021-05-24 19:29:48:815 [UiAutomator2] Starting 'com.android.chrome' directly on the device
+2021-05-24 19:29:48:924 [ADB] Found 2 'build-tools' folders under 'C:\Users\way2automation\AppData\Local\Android\Sdk' (newest first):
+2021-05-24 19:29:48:928 [ADB]     C:/Users/way2automation/AppData/Local/Android/Sdk/build-tools/30.0.3
+2021-05-24 19:29:48:936 [ADB]     C:/Users/way2automation/AppData/Local/Android/Sdk/build-tools/29.0.3
+2021-05-24 19:29:48:937 [ADB] Using 'adb.exe' from 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2021-05-24 19:29:48:945 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2021-05-24 19:29:49:020 [AndroidDriver] Retrieving device list
+2021-05-24 19:29:49:041 [ADB] Trying to find a connected android device
+2021-05-24 19:29:49:083 [ADB] Getting connected devices
+2021-05-24 19:29:49:163 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:49:167 [HTTP] {}
+2021-05-24 19:29:49:199 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:49:206 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:49:257 [HTTP] <-- GET /wd/hub/status 200 48 ms - 68
+2021-05-24 19:29:49:272 [HTTP] 
+2021-05-24 19:29:49:322 [ADB] Connected devices: [{"udid":"8e006adb","state":"device"},{"udid":"emulator-5554","state":"device"}]
+2021-05-24 19:29:49:339 [AndroidDriver] Using device: 8e006adb
+2021-05-24 19:29:49:344 [ADB] Using 'adb.exe' from 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2021-05-24 19:29:49:363 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2021-05-24 19:29:49:558 [ADB] Setting device id to 8e006adb
+2021-05-24 19:29:49:571 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell getprop ro.build.version.sdk'
+2021-05-24 19:29:49:831 [ADB] Current device property 'ro.build.version.sdk': 30
+2021-05-24 19:29:49:839 [ADB] Getting device platform version
+2021-05-24 19:29:49:844 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell getprop ro.build.version.release'
+2021-05-24 19:29:50:240 [ADB] Current device property 'ro.build.version.release': 11
+2021-05-24 19:29:50:252 [ADB] Device API level: 30
+2021-05-24 19:29:50:265 [UiAutomator2] Relaxing hidden api policy
+2021-05-24 19:29:50:271 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2021-05-24 19:29:50:578 [AndroidDriver] No app sent in, not parsing package/activity
+2021-05-24 19:29:50:581 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb wait-for-device'
+2021-05-24 19:29:50:690 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell echo ping'
+2021-05-24 19:29:51:008 [AndroidDriver] Pushing settings apk to device...
+2021-05-24 19:29:51:014 [ADB] Getting install status for io.appium.settings
+2021-05-24 19:29:51:030 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell dumpsys package io.appium.settings'
+2021-05-24 19:29:51:231 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:51:233 [HTTP] {}
+2021-05-24 19:29:51:240 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:51:241 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:51:243 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:29:51:244 [HTTP] 
+2021-05-24 19:29:51:297 [ADB] 'io.appium.settings' is installed
+2021-05-24 19:29:51:301 [ADB] Getting package info for 'io.appium.settings'
+2021-05-24 19:29:51:308 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell dumpsys package io.appium.settings'
+2021-05-24 19:29:51:533 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.3.0' >= '3.3.0')
+2021-05-24 19:29:51:537 [ADB] There is no need to install/upgrade 'C:\Users\way2automation\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2021-05-24 19:29:51:551 [ADB] Getting IDs of all 'io.appium.settings' processes
+2021-05-24 19:29:51:555 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell 'pgrep --help; echo $?''
+2021-05-24 19:29:51:720 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2021-05-24 19:29:51:894 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2021-05-24 19:29:51:905 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell appops set io.appium.settings android:mock_location allow'
+2021-05-24 19:29:52:117 [Logcat] Starting logs capture with command: C:\\Users\\way2automation\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 8e006adb logcat -v threadtime
+2021-05-24 19:29:52:696 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2021-05-24 19:29:52:700 [ADB] Forwarding system: 8200 to device: 6790
+2021-05-24 19:29:52:708 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb forward tcp:8200 tcp:6790'
+2021-05-24 19:29:52:968 [ADB] Getting install status for io.appium.uiautomator2.server
+2021-05-24 19:29:52:975 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell dumpsys package io.appium.uiautomator2.server'
+2021-05-24 19:29:53:260 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:53:266 [HTTP] {}
+2021-05-24 19:29:53:267 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:53:274 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:53:276 [HTTP] <-- GET /wd/hub/status 200 18 ms - 68
+2021-05-24 19:29:53:277 [HTTP] 
+2021-05-24 19:29:53:403 [ADB] 'io.appium.uiautomator2.server' is installed
+2021-05-24 19:29:53:416 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2021-05-24 19:29:53:422 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell dumpsys package io.appium.uiautomator2.server'
+2021-05-24 19:29:53:843 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.21.1' >= '4.21.1')
+2021-05-24 19:29:53:849 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2021-05-24 19:29:53:852 [ADB] Checking app cert for C:\Users\way2automation\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.21.1.apk
+2021-05-24 19:29:53:870 [ADB] Using 'apksigner.jar' from 'C:\Users\way2automation\AppData\Local\Android\Sdk\build-tools\30.0.3\lib\apksigner.jar'
+2021-05-24 19:29:53:887 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk1.8.0_131\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\way2automation\\AppData\\Local\\Android\\Sdk\\build-tools\\30.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\way2automation\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.21.1.apk
+2021-05-24 19:29:55:361 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:55:402 [HTTP] {}
+2021-05-24 19:29:55:443 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:55:468 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:55:501 [HTTP] <-- GET /wd/hub/status 200 154 ms - 68
+2021-05-24 19:29:55:515 [HTTP] 
+2021-05-24 19:29:56:002 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2021-05-24 19:29:56:016 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2021-05-24 19:29:56:018 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2021-05-24 19:29:56:020 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2021-05-24 19:29:56:023 [ADB] 
+2021-05-24 19:29:56:026 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v4.21.1.apk'
+2021-05-24 19:29:56:027 [ADB] 'C:\Users\way2automation\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.21.1.apk' is signed with the default certificate
+2021-05-24 19:29:56:028 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2021-05-24 19:29:56:061 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell dumpsys package io.appium.uiautomator2.server.test'
+2021-05-24 19:29:56:293 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2021-05-24 19:29:56:344 [ADB] Checking app cert for C:\Users\way2automation\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+2021-05-24 19:29:56:360 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk1.8.0_131\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\way2automation\\AppData\\Local\\Android\\Sdk\\build-tools\\30.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\way2automation\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+2021-05-24 19:29:57:492 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:57:497 [HTTP] {}
+2021-05-24 19:29:57:504 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:57:508 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:57:511 [HTTP] <-- GET /wd/hub/status 200 17 ms - 68
+2021-05-24 19:29:57:512 [HTTP] 
+2021-05-24 19:29:57:514 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2021-05-24 19:29:57:515 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2021-05-24 19:29:57:519 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2021-05-24 19:29:57:526 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2021-05-24 19:29:57:547 [ADB] 
+2021-05-24 19:29:57:556 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2021-05-24 19:29:57:575 [ADB] 'C:\Users\way2automation\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2021-05-24 19:29:57:585 [UiAutomator2] Server packages are not going to be (re)installed
+2021-05-24 19:29:57:595 [UiAutomator2] Waiting up to 30000ms for services to be available
+2021-05-24 19:29:57:605 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell pm list instrumentation'
+2021-05-24 19:29:57:923 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2021-05-24 19:29:57:928 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2021-05-24 19:29:57:929 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2021-05-24 19:29:57:935 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2021-05-24 19:29:58:148 [UiAutomator2] No app capability. Assuming it is already on the device
+2021-05-24 19:29:58:178 [ADB] Getting install status for com.android.chrome
+2021-05-24 19:29:58:198 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell dumpsys package com.android.chrome'
+2021-05-24 19:29:58:532 [ADB] 'com.android.chrome' is installed
+2021-05-24 19:29:58:535 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell am force-stop com.android.chrome'
+2021-05-24 19:29:58:882 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell pm clear com.android.chrome'
+2021-05-24 19:29:59:200 [AndroidDriver] Performed fast reset on the installed 'com.android.chrome' application (stop and clear)
+2021-05-24 19:29:59:249 [UiAutomator2] Performing shallow cleanup of automation leftovers
+2021-05-24 19:29:59:291 [UiAutomator2] No obsolete sessions have been detected (socket hang up)
+2021-05-24 19:29:59:312 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell am force-stop io.appium.uiautomator2.server.test'
+2021-05-24 19:29:59:516 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:29:59:522 [HTTP] {}
+2021-05-24 19:29:59:536 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:29:59:540 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:29:59:552 [HTTP] <-- GET /wd/hub/status 200 27 ms - 68
+2021-05-24 19:29:59:554 [HTTP] 
+2021-05-24 19:29:59:718 [UiAutomator2] Starting UIAutomator2 server 4.21.1
+2021-05-24 19:29:59:723 [UiAutomator2] Using UIAutomator2 server from 'C:\Users\way2automation\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.21.1.apk' and test from 'C:\Users\way2automation\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+2021-05-24 19:29:59:729 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2021-05-24 19:29:59:732 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","8e006adb","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2021-05-24 19:29:59:741 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-24 19:29:59:762 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2021-05-24 19:29:59:778 [WD Proxy] socket hang up
+2021-05-24 19:30:00:605 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2021-05-24 19:30:00:787 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-24 19:30:00:790 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2021-05-24 19:30:00:824 [WD Proxy] socket hang up
+2021-05-24 19:30:01:554 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:01:557 [HTTP] {}
+2021-05-24 19:30:01:572 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:01:574 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:01:576 [HTTP] <-- GET /wd/hub/status 200 22 ms - 68
+2021-05-24 19:30:01:577 [HTTP] 
+2021-05-24 19:30:01:852 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-24 19:30:01:867 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2021-05-24 19:30:01:927 [WD Proxy] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2021-05-24 19:30:01:933 [UiAutomator2] The initialization of the instrumentation process took 2205ms
+2021-05-24 19:30:01:941 [WD Proxy] Matched '/session' to command name 'createSession'
+2021-05-24 19:30:01:942 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8200/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"android","server:CONFIG_UUID":"54b33bc0-8598-4b19-9ae5-9c020666dfd8","deviceName":"Android","udid":"8e006adb"},"browserName":"Chrome","platformName":"android","server:CONFIG_UUID":"54b33bc0-8598-4b19-9ae5-9c020666dfd8","deviceName":"8e006adb","udid":"8e006adb","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"8e006adb"}],"alwaysMatch":{}}}
+2021-05-24 19:30:01:969 [WD Proxy] Got response with status 200: {"sessionId":"dbb82cb6-0c75-4c35-9eae-3cafa7f395bc","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"android","server:CONFIG_UUID":"54b33bc0-8598-4b19-9ae5-9c020666dfd8","deviceName":"Android","udid":"8e006adb"},"browserName":"Chrome","platformName":"android","server:CONFIG_UUID":"54b33bc0-8598-4b19-9ae5-9c020666dfd8","deviceName":"8e006adb","udid":"8e006adb","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"8e006adb"}],"alwaysMatch":{}},"sessionId":"dbb82cb6-0c75-4c35-9eae-3cafa7f395bc"}}
+2021-05-24 19:30:01:983 [WD Proxy] Determined the downstream protocol as 'W3C'
+2021-05-24 19:30:02:045 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/wd/hub/session/dbb82cb6-0c75-4c35-9eae-3cafa7f395bc/appium/device/info] with no body
+2021-05-24 19:30:02:086 [WD Proxy] Got response with status 200: {"sessionId":"dbb82cb6-0c75-4c35-9eae-3cafa7f395bc","value":{"androidId":"85f9e2fc01692e45","apiVersion":"30","bluetooth":{"state":"ON"},"brand":"vivo","carrierName":"Jio 4G","displayDensity":480,"locale":"en_US","manufacturer":"vivo","model":"vivo 1818","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":14,"linkUpstreamBandwidthKbps":14,"networkCapabilities":"NET_CAPABILITY_IMS,NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"ims","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":18,"subtypeName":"IWLAN","type":0,"typeName":"MOBILE"},{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":15000,"networkCapabilities":"NET_CAPABILITY_IMS,NET_CA...
+2021-05-24 19:30:02:143 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell dumpsys window'
+2021-05-24 19:30:02:332 [AndroidDriver] Screen already unlocked, doing nothing
+2021-05-24 19:30:02:343 [AndroidDriver] Starting a chrome-based browser session
+2021-05-24 19:30:02:372 [AndroidDriver] A port was not given, using random free port: 8000
+2021-05-24 19:30:02:375 [AndroidDriver] Automated Chromedriver download is disabled. Use 'chromedriver_autodownload' server feature to enable it
+2021-05-24 19:30:02:398 [AndroidDriver] Precalculated Chromedriver capabilities: {
+2021-05-24 19:30:02:399 [AndroidDriver]   "androidPackage": "com.android.chrome",
+2021-05-24 19:30:02:400 [AndroidDriver]   "androidDeviceSerial": "8e006adb"
+2021-05-24 19:30:02:402 [AndroidDriver] }
+2021-05-24 19:30:02:408 [AndroidDriver] Before starting chromedriver, androidPackage is 'com.android.chrome'
+2021-05-24 19:30:02:425 [Chromedriver] Changed state to 'starting'
+2021-05-24 19:30:02:431 [Chromedriver] Using the static Chromedriver->Chrome mapping
+2021-05-24 19:30:02:433 [Chromedriver] The most recent known Chrome version: 89.0.4389
+2021-05-24 19:30:02:449 [Chromedriver] Found 1 executable in 'C:\Users\way2automation\AppData\Roaming\npm\node_modules\appium\node_modules\appium-chromedriver\chromedriver\win'
+2021-05-24 19:30:02:540 [Chromedriver] The following Chromedriver executables were found:
+2021-05-24 19:30:02:553 [Chromedriver]     'C:/Users/way2automation/AppData/Roaming/npm/node_modules/appium/node_modules/appium-chromedriver/chromedriver/win/chromedriver.exe' (version '83.0.4103.14', minimum Chrome version '83')
+2021-05-24 19:30:02:569 [Chromedriver] Found 1 Chromedriver, which is missing in the list of known versions: {"83.0.4103.14":"83"}
+2021-05-24 19:30:02:787 [ADB] Getting package info for 'com.android.chrome'
+2021-05-24 19:30:02:791 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell dumpsys package com.android.chrome'
+2021-05-24 19:30:02:998 [Chromedriver] Found Chrome bundle 'com.android.chrome' version '83.0.4103'
+2021-05-24 19:30:03:002 [Chromedriver] Found 1 executable capable of automating Chrome '83.0.4103'.
+2021-05-24 19:30:03:009 [Chromedriver] Choosing the most recent, 'C:/Users/way2automation/AppData/Roaming/npm/node_modules/appium/node_modules/appium-chromedriver/chromedriver/win/chromedriver.exe'.
+2021-05-24 19:30:03:013 [Chromedriver] If a specific version is required, specify it with the `chromedriverExecutable`desired capability.
+2021-05-24 19:30:03:014 [Chromedriver] Set chromedriver binary as: C:/Users/way2automation/AppData/Roaming/npm/node_modules/appium/node_modules/appium-chromedriver/chromedriver/win/chromedriver.exe
+2021-05-24 19:30:03:016 [Chromedriver] Killing any old chromedrivers, running: wmic process where "commandline like '%chromedriver.exe%--port=8000%'" delete
+2021-05-24 19:30:03:509 [Chromedriver] Successfully cleaned up old chromedrivers
+2021-05-24 19:30:03:517 [Chromedriver] Cleaning this device's adb forwarded port socket connections: 8e006adb
+2021-05-24 19:30:03:525 [ADB] List forwarding ports
+2021-05-24 19:30:03:527 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb forward --list'
+2021-05-24 19:30:03:598 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:03:603 [HTTP] {}
+2021-05-24 19:30:03:610 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:03:611 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:03:613 [HTTP] <-- GET /wd/hub/status 200 15 ms - 68
+2021-05-24 19:30:03:614 [HTTP] 
+2021-05-24 19:30:03:742 [Chromedriver] Spawning chromedriver with: C:/Users/way2automation/AppData/Roaming/npm/node_modules/appium/node_modules/appium-chromedriver/chromedriver/win/chromedriver.exe --url-base=wd/hub --port=8000 --adb-port=5037 --verbose
+2021-05-24 19:30:03:782 [Chromedriver] Chromedriver version: '83.0.4103.14'
+2021-05-24 19:30:03:785 [WD Proxy] Matched '/status' to command name 'getStatus'
+2021-05-24 19:30:03:792 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8000/wd/hub/status] with no body
+2021-05-24 19:30:04:361 [WD Proxy] Got response with status 200: {"value":{"build":{"version":"83.0.4103.14 (be04594a2b8411758b860104bc0a1033417178be-refs/branch-heads/4103@{#119})"},"message":"ChromeDriver ready for new sessions.","os":{"arch":"x86_64","name":"Windows NT","version":"10.0.19042"},"ready":true}}
+2021-05-24 19:30:04:367 [Chromedriver] Starting W3C Chromedriver session with capabilities: {
+2021-05-24 19:30:04:375 [Chromedriver]   "capabilities": {
+2021-05-24 19:30:04:382 [Chromedriver]     "alwaysMatch": {
+2021-05-24 19:30:04:382 [Chromedriver]       "goog:chromeOptions": {
+2021-05-24 19:30:04:391 [Chromedriver]         "androidPackage": "com.android.chrome",
+2021-05-24 19:30:04:412 [Chromedriver]         "androidDeviceSerial": "8e006adb"
+2021-05-24 19:30:04:414 [Chromedriver]       },
+2021-05-24 19:30:04:414 [Chromedriver]       "goog:loggingPrefs": {
+2021-05-24 19:30:04:415 [Chromedriver]         "browser": "ALL"
+2021-05-24 19:30:04:416 [Chromedriver]       }
+2021-05-24 19:30:04:417 [Chromedriver]     }
+2021-05-24 19:30:04:417 [Chromedriver]   }
+2021-05-24 19:30:04:418 [Chromedriver] }
+2021-05-24 19:30:04:420 [WD Proxy] Matched '/session' to command name 'createSession'
+2021-05-24 19:30:04:432 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8000/wd/hub/session] with body: {"capabilities":{"alwaysMatch":{"goog:chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"8e006adb"},"goog:loggingPrefs":{"browser":"ALL"}}}}
+2021-05-24 19:30:05:637 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:05:652 [HTTP] {}
+2021-05-24 19:30:05:653 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:05:654 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:05:668 [HTTP] <-- GET /wd/hub/status 200 19 ms - 68
+2021-05-24 19:30:05:670 [HTTP] 
+2021-05-24 19:30:06:335 [Chromedriver] Webview version: 'Chrome/83.0.4103.106'
+2021-05-24 19:30:07:662 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:07:665 [HTTP] {}
+2021-05-24 19:30:07:671 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:07:672 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:07:674 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:30:07:687 [HTTP] 
+2021-05-24 19:30:08:530 [WD Proxy] Got response with status 200: {"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"83.0.4103.106","chrome":{"chromedriverVersion":"83.0.4103.14 (be04594a2b8411758b860104bc0a1033417178be-refs/branch-heads/4103@{#119})"},"goog:chromeOptions":{"debuggerAddress":"localhost:56510"},"pageLoadStrategy":"normal","platformName":"android","proxy":{},"setWindowRect":false,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:virtualAuthenticators":false},"sessionId":"f80d81e8ba9e2c3d73f43cc535694661"}}
+2021-05-24 19:30:08:542 [WD Proxy] Determined the downstream protocol as 'W3C'
+2021-05-24 19:30:08:543 [Chromedriver] Changed state to 'online'
+2021-05-24 19:30:08:642 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/wd/hub/session/dbb82cb6-0c75-4c35-9eae-3cafa7f395bc/appium/device/pixel_ratio] with no body
+2021-05-24 19:30:08:656 [WD Proxy] Got response with status 200: {"sessionId":"dbb82cb6-0c75-4c35-9eae-3cafa7f395bc","value":3}
+2021-05-24 19:30:08:670 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2021-05-24 19:30:08:689 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/wd/hub/session/dbb82cb6-0c75-4c35-9eae-3cafa7f395bc/appium/device/system_bars] with no body
+2021-05-24 19:30:08:716 [WD Proxy] Got response with status 200: {"sessionId":"dbb82cb6-0c75-4c35-9eae-3cafa7f395bc","value":{"statusBar":84}}
+2021-05-24 19:30:08:718 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2021-05-24 19:30:08:727 [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/wd/hub/session/dbb82cb6-0c75-4c35-9eae-3cafa7f395bc/window/current/size] with no body
+2021-05-24 19:30:08:767 [WD Proxy] Got response with status 200: {"sessionId":"dbb82cb6-0c75-4c35-9eae-3cafa7f395bc","value":{"height":2214,"width":1080}}
+2021-05-24 19:30:08:775 [Appium] New AndroidUiautomator2Driver session created successfully, session 562bd226-8e0a-4a31-bf29-b3c2845a95c0 added to master session list
+2021-05-24 19:30:08:784 [BaseDriver] Event 'newSessionStarted' logged at 1621884608780 (01:00:08 GMT+0530 (India Standard Time))
+2021-05-24 19:30:08:793 [W3C (562bd226)] Cached the protocol value 'W3C' for the new session 562bd226-8e0a-4a31-bf29-b3c2845a95c0
+2021-05-24 19:30:08:795 [W3C (562bd226)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","platformName":"android","server:CONFIG_UUID":"54b33bc0-8598-4b19-9ae5-9c020666dfd8","deviceName":"Android","udid":"8e006adb"},"browserName":"Chrome","platformName":"android","server:CONFIG_UUID":"54b33bc0-8598-4b19-9ae5-9c020666dfd8","deviceName":"8e006adb","udid":"8e006adb","appPackage":"com.android.chrome","appActivity":"com.google.android.apps.chrome.Main","deviceUDID":"8e006adb","deviceApiLevel":30,"platformVersion":"11","deviceScreenSize":"1080x2340","deviceScreenDensity":480,"deviceModel":"vivo 1818","deviceManufacturer":"vivo","pixelRatio":3,"statBarHeight":84,"viewportRect":{"left":0,"top":84,"width":1080,"height":2130}}}
+2021-05-24 19:30:08:821 [HTTP] <-- POST /wd/hub/session 200 21022 ms - 944
+2021-05-24 19:30:08:825 [HTTP] 
+2021-05-24 19:30:08:865 [HTTP] --> POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/timeouts
+2021-05-24 19:30:08:884 [HTTP] {"implicit":10000}
+2021-05-24 19:30:08:904 [W3C (562bd226)] Driver proxy active, passing request on via HTTP proxy
+2021-05-24 19:30:08:911 [WD Proxy] Matched '/wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/timeouts' to command name 'timeouts'
+2021-05-24 19:30:08:914 [Protocol Converter] Will send the following request bodies to /timeouts: [{"implicit":10000}]
+2021-05-24 19:30:08:916 [WD Proxy] Proxying [POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/timeouts] to [POST http://127.0.0.1:8000/wd/hub/session/f80d81e8ba9e2c3d73f43cc535694661/timeouts] with body: {"implicit":10000}
+2021-05-24 19:30:08:931 [WD Proxy] Got response with status 200: {"value":null}
+2021-05-24 19:30:08:935 [HTTP] <-- POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/timeouts 200 69 ms - 14
+2021-05-24 19:30:08:938 [HTTP] 
+2021-05-24 19:30:08:967 [HTTP] --> POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/url
+2021-05-24 19:30:08:969 [HTTP] {"url":"http://google.com"}
+2021-05-24 19:30:08:972 [W3C (562bd226)] Driver proxy active, passing request on via HTTP proxy
+2021-05-24 19:30:08:974 [WD Proxy] Matched '/wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/url' to command name 'setUrl'
+2021-05-24 19:30:08:975 [WD Proxy] Proxying [POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/url] to [POST http://127.0.0.1:8000/wd/hub/session/f80d81e8ba9e2c3d73f43cc535694661/url] with body: {"url":"http://google.com"}
+2021-05-24 19:30:09:689 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:09:699 [HTTP] {}
+2021-05-24 19:30:09:700 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:09:700 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:09:702 [HTTP] <-- GET /wd/hub/status 200 14 ms - 68
+2021-05-24 19:30:09:703 [HTTP] 
+2021-05-24 19:30:10:675 [WD Proxy] Got response with status 200: {"value":null}
+2021-05-24 19:30:10:688 [HTTP] <-- POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/url 200 1711 ms - 14
+2021-05-24 19:30:10:705 [HTTP] 
+2021-05-24 19:30:10:719 [HTTP] --> POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/element
+2021-05-24 19:30:10:721 [HTTP] {"using":"xpath","value":"//*[@name='q']"}
+2021-05-24 19:30:10:730 [W3C (562bd226)] Driver proxy active, passing request on via HTTP proxy
+2021-05-24 19:30:10:735 [WD Proxy] Matched '/wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/element' to command name 'findElement'
+2021-05-24 19:30:10:753 [WD Proxy] Proxying [POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/element] to [POST http://127.0.0.1:8000/wd/hub/session/f80d81e8ba9e2c3d73f43cc535694661/element] with body: {"using":"xpath","value":"//*[@name='q']"}
+2021-05-24 19:30:10:896 [WD Proxy] Got response with status 200: {"value":{"element-6066-11e4-a52e-4f735466cecf":"5c420c0d-8766-4236-92cf-336ff065288f"}}
+2021-05-24 19:30:10:920 [HTTP] <-- POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/element 200 182 ms - 137
+2021-05-24 19:30:10:921 [HTTP] 
+2021-05-24 19:30:10:929 [HTTP] --> POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/element/5c420c0d-8766-4236-92cf-336ff065288f/value
+2021-05-24 19:30:10:930 [HTTP] {"text":"Hello Appium !!!","value":["H","e","l","l","o"," ","A","p","p","i","u","m"," ","!","!","!"],"id":"5c420c0d-8766-4236-92cf-336ff065288f"}
+2021-05-24 19:30:10:942 [W3C (562bd226)] Driver proxy active, passing request on via HTTP proxy
+2021-05-24 19:30:10:946 [WD Proxy] Matched '/wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/element/5c420c0d-8766-4236-92cf-336ff065288f/value' to command name 'setValue'
+2021-05-24 19:30:10:978 [WD Proxy] Proxying [POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/element/5c420c0d-8766-4236-92cf-336ff065288f/value] to [POST http://127.0.0.1:8000/wd/hub/session/f80d81e8ba9e2c3d73f43cc535694661/element/5c420c0d-8766-4236-92cf-336ff065288f/value] with body: {"text":"Hello Appium !!!","value":["H","e","l","l","o"," ","A","p","p","i","u","m"," ","!","!","!"],"id":"5c420c0d-8766-4236-92cf-336ff065288f"}
+2021-05-24 19:30:11:720 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:11:724 [HTTP] {}
+2021-05-24 19:30:11:730 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:11:732 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:11:734 [HTTP] <-- GET /wd/hub/status 200 18 ms - 68
+2021-05-24 19:30:11:736 [HTTP] 
+2021-05-24 19:30:11:871 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:11:875 [HTTP] {}
+2021-05-24 19:30:11:884 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:11:888 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:11:898 [HTTP] <-- GET /wd/hub/status 200 37 ms - 68
+2021-05-24 19:30:11:903 [HTTP] 
+2021-05-24 19:30:13:138 [WD Proxy] Got response with status 200: {"value":null}
+2021-05-24 19:30:13:152 [HTTP] <-- POST /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0/element/5c420c0d-8766-4236-92cf-336ff065288f/value 200 2212 ms - 14
+2021-05-24 19:30:13:153 [HTTP] 
+2021-05-24 19:30:13:191 [HTTP] --> DELETE /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0
+2021-05-24 19:30:13:197 [HTTP] {}
+2021-05-24 19:30:13:203 [W3C (562bd226)] Calling AppiumDriver.deleteSession() with args: ["562bd226-8e0a-4a31-bf29-b3c2845a95c0"]
+2021-05-24 19:30:13:204 [BaseDriver] Event 'quitSessionRequested' logged at 1621884613203 (01:00:13 GMT+0530 (India Standard Time))
+2021-05-24 19:30:13:214 [Appium] Removing session 562bd226-8e0a-4a31-bf29-b3c2845a95c0 from our master session list
+2021-05-24 19:30:13:231 [UiAutomator2] Deleting UiAutomator2 session
+2021-05-24 19:30:13:238 [AndroidDriver] Stopping chromedriver for context CHROMIUM
+2021-05-24 19:30:13:239 [Chromedriver] Changed state to 'stopping'
+2021-05-24 19:30:13:324 [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8000/wd/hub/session/f80d81e8ba9e2c3d73f43cc535694661] with no body
+2021-05-24 19:30:13:481 [WD Proxy] Got response with status 200: {"value":null}
+2021-05-24 19:30:13:510 [Chromedriver] Changed state to 'stopped'
+2021-05-24 19:30:13:517 [UiAutomator2] Deleting UiAutomator2 server session
+2021-05-24 19:30:13:531 [WD Proxy] Matched '/' to command name 'deleteSession'
+2021-05-24 19:30:13:537 [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/wd/hub/session/dbb82cb6-0c75-4c35-9eae-3cafa7f395bc] with no body
+2021-05-24 19:30:13:564 [WD Proxy] Got response with status 200: {"sessionId":"dbb82cb6-0c75-4c35-9eae-3cafa7f395bc","value":null}
+2021-05-24 19:30:13:565 [Logcat] Stopping logcat capture
+2021-05-24 19:30:13:626 [ADB] Removing forwarded port socket connection: 8200 
+2021-05-24 19:30:13:647 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb forward --remove tcp:8200'
+2021-05-24 19:30:13:658 [Instrumentation] .
+2021-05-24 19:30:13:689 [Instrumentation] Time: 13.059
+2021-05-24 19:30:13:698 [Instrumentation] 
+2021-05-24 19:30:13:700 [Instrumentation] OK (1 test)
+2021-05-24 19:30:13:744 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:13:752 [HTTP] {}
+2021-05-24 19:30:13:761 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:13:762 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:13:765 [HTTP] <-- GET /wd/hub/status 200 21 ms - 68
+2021-05-24 19:30:13:767 [HTTP] 
+2021-05-24 19:30:13:803 [UiAutomator2] Restoring hidden api policy to the device default configuration
+2021-05-24 19:30:13:805 [ADB] Running 'C:\Users\way2automation\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s 8e006adb shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2021-05-24 19:30:14:175 [Instrumentation] The process has exited with code 0
+2021-05-24 19:30:14:310 [BaseDriver] Event 'quitSessionFinished' logged at 1621884614308 (01:00:14 GMT+0530 (India Standard Time))
+2021-05-24 19:30:14:314 [W3C (562bd226)] Received response: null
+2021-05-24 19:30:14:321 [W3C (562bd226)] But deleting session, so not returning
+2021-05-24 19:30:14:323 [W3C (562bd226)] Responding to client with driver.deleteSession() result: null
+2021-05-24 19:30:14:325 [HTTP] <-- DELETE /wd/hub/session/562bd226-8e0a-4a31-bf29-b3c2845a95c0 200 1144 ms - 14
+2021-05-24 19:30:14:328 [HTTP] 
+2021-05-24 19:30:15:781 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:15:786 [HTTP] {}
+2021-05-24 19:30:15:793 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:15:794 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:15:796 [HTTP] <-- GET /wd/hub/status 200 14 ms - 68
+2021-05-24 19:30:15:798 [HTTP] 
+2021-05-24 19:30:17:808 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:17:812 [HTTP] {}
+2021-05-24 19:30:17:818 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:17:818 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:17:820 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:30:17:821 [HTTP] 
+2021-05-24 19:30:19:836 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:19:847 [HTTP] {}
+2021-05-24 19:30:19:848 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:19:850 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:19:851 [HTTP] <-- GET /wd/hub/status 200 15 ms - 68
+2021-05-24 19:30:19:852 [HTTP] 
+2021-05-24 19:30:21:866 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:21:872 [HTTP] {}
+2021-05-24 19:30:21:875 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:21:881 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:21:883 [HTTP] <-- GET /wd/hub/status 200 17 ms - 68
+2021-05-24 19:30:21:884 [HTTP] 
+2021-05-24 19:30:23:893 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:23:900 [HTTP] {}
+2021-05-24 19:30:23:909 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:23:911 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:23:917 [HTTP] <-- GET /wd/hub/status 200 20 ms - 68
+2021-05-24 19:30:23:933 [HTTP] 
+2021-05-24 19:30:24:522 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:24:547 [HTTP] {}
+2021-05-24 19:30:24:550 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:24:558 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:24:563 [HTTP] <-- GET /wd/hub/status 200 38 ms - 68
+2021-05-24 19:30:24:572 [HTTP] 
+2021-05-24 19:30:25:937 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:25:952 [HTTP] {}
+2021-05-24 19:30:25:953 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:25:955 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:25:963 [HTTP] <-- GET /wd/hub/status 200 19 ms - 68
+2021-05-24 19:30:25:984 [HTTP] 
+2021-05-24 19:30:27:966 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:27:970 [HTTP] {}
+2021-05-24 19:30:27:977 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:27:978 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:27:991 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:30:27:991 [HTTP] 
+2021-05-24 19:30:29:994 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:29:999 [HTTP] {}
+2021-05-24 19:30:30:008 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:30:009 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:30:012 [HTTP] <-- GET /wd/hub/status 200 18 ms - 68
+2021-05-24 19:30:30:015 [HTTP] 
+2021-05-24 19:30:32:032 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:32:035 [HTTP] {}
+2021-05-24 19:30:32:042 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:32:044 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:32:045 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:30:32:046 [HTTP] 
+2021-05-24 19:30:33:672 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:33:683 [HTTP] {}
+2021-05-24 19:30:33:714 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:33:727 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:33:767 [HTTP] <-- GET /wd/hub/status 200 57 ms - 68
+2021-05-24 19:30:33:775 [HTTP] 
+2021-05-24 19:30:34:069 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:34:100 [HTTP] {}
+2021-05-24 19:30:34:102 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:34:124 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:34:149 [HTTP] <-- GET /wd/hub/status 200 61 ms - 68
+2021-05-24 19:30:34:153 [HTTP] 
+2021-05-24 19:30:36:149 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:36:153 [HTTP] {}
+2021-05-24 19:30:36:153 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:36:160 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:36:165 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:30:36:171 [HTTP] 
+2021-05-24 19:30:38:186 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:38:200 [HTTP] {}
+2021-05-24 19:30:38:202 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:38:204 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:38:215 [HTTP] <-- GET /wd/hub/status 200 20 ms - 68
+2021-05-24 19:30:38:216 [HTTP] 
+2021-05-24 19:30:40:217 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:40:221 [HTTP] {}
+2021-05-24 19:30:40:222 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:40:228 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:40:229 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:30:40:231 [HTTP] 
+2021-05-24 19:30:42:234 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:42:237 [HTTP] {}
+2021-05-24 19:30:42:238 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:42:244 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:42:245 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:30:42:249 [HTTP] 
+2021-05-24 19:30:44:254 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:44:257 [HTTP] {}
+2021-05-24 19:30:44:263 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:44:264 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:44:265 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:30:44:266 [HTTP] 
+2021-05-24 19:30:46:274 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:46:278 [HTTP] {}
+2021-05-24 19:30:46:283 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:46:285 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:46:286 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:30:46:287 [HTTP] 
+2021-05-24 19:30:48:295 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:48:298 [HTTP] {}
+2021-05-24 19:30:48:304 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:48:305 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:48:306 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:30:48:307 [HTTP] 
+2021-05-24 19:30:50:321 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:50:325 [HTTP] {}
+2021-05-24 19:30:50:330 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:50:331 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:50:332 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:30:50:333 [HTTP] 
+2021-05-24 19:30:52:339 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:52:344 [HTTP] {}
+2021-05-24 19:30:52:347 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:52:348 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:52:349 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:30:52:350 [HTTP] 
+2021-05-24 19:30:54:363 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:54:365 [HTTP] {}
+2021-05-24 19:30:54:366 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:54:372 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:54:374 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:30:54:375 [HTTP] 
+2021-05-24 19:30:56:379 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:56:382 [HTTP] {}
+2021-05-24 19:30:56:384 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:56:390 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:56:396 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:30:56:403 [HTTP] 
+2021-05-24 19:30:58:403 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:30:58:406 [HTTP] {}
+2021-05-24 19:30:58:406 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:30:58:413 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:30:58:414 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:30:58:419 [HTTP] 
+2021-05-24 19:31:00:425 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:00:427 [HTTP] {}
+2021-05-24 19:31:00:428 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:00:434 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:00:436 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:31:00:436 [HTTP] 
+2021-05-24 19:31:02:451 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:02:455 [HTTP] {}
+2021-05-24 19:31:02:456 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:02:462 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:02:464 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:31:02:464 [HTTP] 
+2021-05-24 19:31:04:472 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:04:480 [HTTP] {}
+2021-05-24 19:31:04:481 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:04:482 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:04:483 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:31:04:483 [HTTP] 
+2021-05-24 19:31:06:490 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:06:493 [HTTP] {}
+2021-05-24 19:31:06:495 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:06:500 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:06:502 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:06:503 [HTTP] 
+2021-05-24 19:31:08:516 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:08:518 [HTTP] {}
+2021-05-24 19:31:08:524 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:08:525 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:08:528 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:31:08:541 [HTTP] 
+2021-05-24 19:31:10:534 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:10:538 [HTTP] {}
+2021-05-24 19:31:10:538 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:10:545 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:10:546 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:31:10:547 [HTTP] 
+2021-05-24 19:31:12:558 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:12:561 [HTTP] {}
+2021-05-24 19:31:12:567 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:12:568 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:12:569 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:31:12:582 [HTTP] 
+2021-05-24 19:31:14:583 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:14:586 [HTTP] {}
+2021-05-24 19:31:14:587 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:14:593 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:14:595 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:14:595 [HTTP] 
+2021-05-24 19:31:16:604 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:16:608 [HTTP] {}
+2021-05-24 19:31:16:614 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:16:615 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:16:617 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:16:617 [HTTP] 
+2021-05-24 19:31:18:626 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:18:629 [HTTP] {}
+2021-05-24 19:31:18:630 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:18:636 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:18:638 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:31:18:638 [HTTP] 
+2021-05-24 19:31:20:655 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:20:664 [HTTP] {}
+2021-05-24 19:31:20:664 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:20:665 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:20:673 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:20:678 [HTTP] 
+2021-05-24 19:31:22:680 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:22:683 [HTTP] {}
+2021-05-24 19:31:22:684 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:22:690 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:22:700 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:22:706 [HTTP] 
+2021-05-24 19:31:24:713 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:24:717 [HTTP] {}
+2021-05-24 19:31:24:718 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:24:724 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:24:725 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:24:726 [HTTP] 
+2021-05-24 19:31:26:733 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:26:736 [HTTP] {}
+2021-05-24 19:31:26:742 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:26:743 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:26:744 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:31:26:745 [HTTP] 
+2021-05-24 19:31:28:753 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:28:757 [HTTP] {}
+2021-05-24 19:31:28:764 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:28:765 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:28:766 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:28:769 [HTTP] 
+2021-05-24 19:31:30:776 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:30:780 [HTTP] {}
+2021-05-24 19:31:30:786 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:30:787 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:30:789 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:30:790 [HTTP] 
+2021-05-24 19:31:32:800 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:32:803 [HTTP] {}
+2021-05-24 19:31:32:804 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:32:810 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:32:811 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:31:32:812 [HTTP] 
+2021-05-24 19:31:34:821 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:34:823 [HTTP] {}
+2021-05-24 19:31:34:823 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:34:829 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:34:830 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
+2021-05-24 19:31:34:831 [HTTP] 
+2021-05-24 19:31:36:840 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:36:847 [HTTP] {}
+2021-05-24 19:31:36:848 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:36:849 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:36:850 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:31:36:851 [HTTP] 
+2021-05-24 19:31:38:859 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:38:861 [HTTP] {}
+2021-05-24 19:31:38:866 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:38:867 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:38:868 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
+2021-05-24 19:31:38:869 [HTTP] 
+2021-05-24 19:31:40:881 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:40:885 [HTTP] {}
+2021-05-24 19:31:40:891 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:40:892 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:40:901 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:40:911 [HTTP] 
+2021-05-24 19:31:42:905 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:42:914 [HTTP] {}
+2021-05-24 19:31:42:915 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:42:916 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:42:917 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:31:42:917 [HTTP] 
+2021-05-24 19:31:44:940 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:44:954 [HTTP] {}
+2021-05-24 19:31:44:954 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:44:956 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:44:957 [HTTP] <-- GET /wd/hub/status 200 17 ms - 68
+2021-05-24 19:31:44:957 [HTTP] 
+2021-05-24 19:31:46:966 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:46:968 [HTTP] {}
+2021-05-24 19:31:46:975 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:46:976 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:46:987 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:46:989 [HTTP] 
+2021-05-24 19:31:48:985 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:48:990 [HTTP] {}
+2021-05-24 19:31:48:995 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:48:996 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:48:998 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:31:48:998 [HTTP] 
+2021-05-24 19:31:51:013 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:51:016 [HTTP] {}
+2021-05-24 19:31:51:017 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:51:022 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:51:024 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:31:51:024 [HTTP] 
+2021-05-24 19:31:53:040 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:53:043 [HTTP] {}
+2021-05-24 19:31:53:044 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:53:050 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:53:051 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:31:53:054 [HTTP] 
+2021-05-24 19:31:55:059 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:55:064 [HTTP] {}
+2021-05-24 19:31:55:069 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:55:070 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:55:071 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:55:071 [HTTP] 
+2021-05-24 19:31:57:093 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:57:096 [HTTP] {}
+2021-05-24 19:31:57:103 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:57:104 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:57:105 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:31:57:105 [HTTP] 
+2021-05-24 19:31:59:120 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:31:59:123 [HTTP] {}
+2021-05-24 19:31:59:124 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:31:59:130 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:31:59:131 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:31:59:132 [HTTP] 
+2021-05-24 19:32:01:139 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:01:148 [HTTP] {}
+2021-05-24 19:32:01:149 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:01:150 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:01:151 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:32:01:156 [HTTP] 
+2021-05-24 19:32:03:161 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:03:164 [HTTP] {}
+2021-05-24 19:32:03:170 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:03:171 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:03:172 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:32:03:172 [HTTP] 
+2021-05-24 19:32:05:180 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:05:185 [HTTP] {}
+2021-05-24 19:32:05:191 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:05:192 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:05:195 [HTTP] <-- GET /wd/hub/status 200 14 ms - 68
+2021-05-24 19:32:05:195 [HTTP] 
+2021-05-24 19:32:07:209 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:07:212 [HTTP] {}
+2021-05-24 19:32:07:217 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:07:218 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:07:219 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:32:07:219 [HTTP] 
+2021-05-24 19:32:09:234 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:09:237 [HTTP] {}
+2021-05-24 19:32:09:244 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:09:244 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:09:245 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:32:09:246 [HTTP] 
+2021-05-24 19:32:11:262 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:11:264 [HTTP] {}
+2021-05-24 19:32:11:270 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:11:271 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:11:272 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
+2021-05-24 19:32:11:272 [HTTP] 
+2021-05-24 19:32:13:285 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:13:289 [HTTP] {}
+2021-05-24 19:32:13:296 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:13:303 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:13:313 [HTTP] <-- GET /wd/hub/status 200 20 ms - 68
+2021-05-24 19:32:13:316 [HTTP] 
+2021-05-24 19:32:15:319 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:15:321 [HTTP] {}
+2021-05-24 19:32:15:322 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:15:329 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:15:330 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:32:15:330 [HTTP] 
+2021-05-24 19:32:17:338 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:17:341 [HTTP] {}
+2021-05-24 19:32:17:347 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:17:348 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:17:353 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:32:17:360 [HTTP] 
+2021-05-24 19:32:19:360 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:19:362 [HTTP] {}
+2021-05-24 19:32:19:363 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:19:368 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:19:369 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
+2021-05-24 19:32:19:370 [HTTP] 
+2021-05-24 19:32:21:382 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:21:385 [HTTP] {}
+2021-05-24 19:32:21:391 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:21:392 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:21:394 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:32:21:395 [HTTP] 
+2021-05-24 19:32:23:405 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:23:408 [HTTP] {}
+2021-05-24 19:32:23:415 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:23:417 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:23:421 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:32:23:427 [HTTP] 
+2021-05-24 19:32:25:423 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:25:428 [HTTP] {}
+2021-05-24 19:32:25:429 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:25:435 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:25:436 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:32:25:437 [HTTP] 
+2021-05-24 19:32:27:444 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:27:447 [HTTP] {}
+2021-05-24 19:32:27:448 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:27:454 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:27:455 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:32:27:465 [HTTP] 
+2021-05-24 19:32:29:471 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:29:476 [HTTP] {}
+2021-05-24 19:32:29:481 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:29:482 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:29:483 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:32:29:484 [HTTP] 
+2021-05-24 19:32:31:489 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:31:497 [HTTP] {}
+2021-05-24 19:32:31:499 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:31:499 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:31:500 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:32:31:501 [HTTP] 
+2021-05-24 19:32:33:511 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:33:514 [HTTP] {}
+2021-05-24 19:32:33:515 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:33:521 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:33:523 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:32:33:524 [HTTP] 
+2021-05-24 19:32:35:532 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:35:534 [HTTP] {}
+2021-05-24 19:32:35:535 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:35:541 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:35:543 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:32:35:544 [HTTP] 
+2021-05-24 19:32:37:551 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:37:555 [HTTP] {}
+2021-05-24 19:32:37:558 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:37:562 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:37:566 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:32:37:572 [HTTP] 
+2021-05-24 19:32:39:575 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:39:578 [HTTP] {}
+2021-05-24 19:32:39:584 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:39:584 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:39:585 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:32:39:586 [HTTP] 
+2021-05-24 19:32:41:596 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:41:599 [HTTP] {}
+2021-05-24 19:32:41:605 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:41:605 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:41:607 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:32:41:608 [HTTP] 
+2021-05-24 19:32:43:614 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:43:616 [HTTP] {}
+2021-05-24 19:32:43:617 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:43:623 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:43:624 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:32:43:625 [HTTP] 
+2021-05-24 19:32:45:637 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:45:639 [HTTP] {}
+2021-05-24 19:32:45:648 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:45:649 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:45:652 [HTTP] <-- GET /wd/hub/status 200 14 ms - 68
+2021-05-24 19:32:45:659 [HTTP] 
+2021-05-24 19:32:47:668 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:47:671 [HTTP] {}
+2021-05-24 19:32:47:678 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:47:679 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:47:680 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:32:47:681 [HTTP] 
+2021-05-24 19:32:49:688 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:49:692 [HTTP] {}
+2021-05-24 19:32:49:697 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:49:698 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:49:699 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:32:49:700 [HTTP] 
+2021-05-24 19:32:51:703 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:51:707 [HTTP] {}
+2021-05-24 19:32:51:713 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:51:714 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:51:715 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:32:51:724 [HTTP] 
+2021-05-24 19:32:53:723 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:53:731 [HTTP] {}
+2021-05-24 19:32:53:732 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:53:734 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:53:735 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:32:53:735 [HTTP] 
+2021-05-24 19:32:55:742 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:55:746 [HTTP] {}
+2021-05-24 19:32:55:747 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:55:753 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:55:754 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:32:55:755 [HTTP] 
+2021-05-24 19:32:57:761 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:57:764 [HTTP] {}
+2021-05-24 19:32:57:770 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:57:771 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:57:771 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:32:57:772 [HTTP] 
+2021-05-24 19:32:59:776 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:32:59:780 [HTTP] {}
+2021-05-24 19:32:59:782 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:32:59:789 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:32:59:799 [HTTP] <-- GET /wd/hub/status 200 14 ms - 68
+2021-05-24 19:32:59:799 [HTTP] 
+2021-05-24 19:33:01:808 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:01:810 [HTTP] {}
+2021-05-24 19:33:01:811 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:01:817 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:01:818 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:33:01:819 [HTTP] 
+2021-05-24 19:33:03:824 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:03:828 [HTTP] {}
+2021-05-24 19:33:03:829 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:03:835 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:03:839 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:03:848 [HTTP] 
+2021-05-24 19:33:05:844 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:05:848 [HTTP] {}
+2021-05-24 19:33:05:849 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:05:855 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:05:857 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:33:05:858 [HTTP] 
+2021-05-24 19:33:07:867 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:07:871 [HTTP] {}
+2021-05-24 19:33:07:878 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:07:879 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:07:890 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:33:07:890 [HTTP] 
+2021-05-24 19:33:09:886 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:09:891 [HTTP] {}
+2021-05-24 19:33:09:899 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:09:903 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:09:909 [HTTP] <-- GET /wd/hub/status 200 18 ms - 68
+2021-05-24 19:33:09:909 [HTTP] 
+2021-05-24 19:33:11:922 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:11:926 [HTTP] {}
+2021-05-24 19:33:11:931 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:11:932 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:11:933 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:11:934 [HTTP] 
+2021-05-24 19:33:13:940 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:13:943 [HTTP] {}
+2021-05-24 19:33:13:944 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:13:950 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:13:952 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:13:952 [HTTP] 
+2021-05-24 19:33:15:970 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:15:972 [HTTP] {}
+2021-05-24 19:33:15:973 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:15:982 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:15:985 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:33:15:991 [HTTP] 
+2021-05-24 19:33:17:994 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:17:998 [HTTP] {}
+2021-05-24 19:33:18:008 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:18:010 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:18:013 [HTTP] <-- GET /wd/hub/status 200 17 ms - 68
+2021-05-24 19:33:18:014 [HTTP] 
+2021-05-24 19:33:20:025 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:20:029 [HTTP] {}
+2021-05-24 19:33:20:034 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:20:035 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:20:036 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:20:037 [HTTP] 
+2021-05-24 19:33:22:046 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:22:050 [HTTP] {}
+2021-05-24 19:33:22:055 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:22:056 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:22:058 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:22:059 [HTTP] 
+2021-05-24 19:33:24:063 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:24:067 [HTTP] {}
+2021-05-24 19:33:24:074 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:24:078 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:24:079 [HTTP] <-- GET /wd/hub/status 200 16 ms - 68
+2021-05-24 19:33:24:084 [HTTP] 
+2021-05-24 19:33:26:090 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:26:099 [HTTP] {}
+2021-05-24 19:33:26:100 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:26:101 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:26:102 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:26:103 [HTTP] 
+2021-05-24 19:33:28:109 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:28:112 [HTTP] {}
+2021-05-24 19:33:28:119 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:28:120 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:28:121 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:33:28:122 [HTTP] 
+2021-05-24 19:33:30:133 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:30:134 [HTTP] {}
+2021-05-24 19:33:30:138 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:30:139 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:30:150 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
+2021-05-24 19:33:30:151 [HTTP] 
+2021-05-24 19:33:32:148 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:32:150 [HTTP] {}
+2021-05-24 19:33:32:157 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:32:157 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:32:159 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:33:32:160 [HTTP] 
+2021-05-24 19:33:34:174 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:34:182 [HTTP] {}
+2021-05-24 19:33:34:182 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:34:183 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:34:184 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:34:188 [HTTP] 
+2021-05-24 19:33:36:197 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:36:200 [HTTP] {}
+2021-05-24 19:33:36:201 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:36:207 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:36:209 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:36:210 [HTTP] 
+2021-05-24 19:33:38:219 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:38:223 [HTTP] {}
+2021-05-24 19:33:38:224 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:38:230 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:38:231 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:33:38:232 [HTTP] 
+2021-05-24 19:33:40:240 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:40:246 [HTTP] {}
+2021-05-24 19:33:40:250 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:40:251 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:40:252 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:40:252 [HTTP] 
+2021-05-24 19:33:42:261 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:42:264 [HTTP] {}
+2021-05-24 19:33:42:278 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:42:284 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:42:285 [HTTP] <-- GET /wd/hub/status 200 24 ms - 68
+2021-05-24 19:33:42:286 [HTTP] 
+2021-05-24 19:33:44:298 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:44:302 [HTTP] {}
+2021-05-24 19:33:44:307 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:44:308 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:44:309 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:44:310 [HTTP] 
+2021-05-24 19:33:46:318 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:46:323 [HTTP] {}
+2021-05-24 19:33:46:330 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:46:333 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:46:334 [HTTP] <-- GET /wd/hub/status 200 15 ms - 68
+2021-05-24 19:33:46:339 [HTTP] 
+2021-05-24 19:33:48:339 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:48:347 [HTTP] {}
+2021-05-24 19:33:48:348 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:48:348 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:48:350 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:33:48:350 [HTTP] 
+2021-05-24 19:33:50:360 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:50:363 [HTTP] {}
+2021-05-24 19:33:50:364 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:50:371 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:50:372 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:33:50:373 [HTTP] 
+2021-05-24 19:33:52:383 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:52:386 [HTTP] {}
+2021-05-24 19:33:52:387 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:52:393 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:52:403 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:33:52:410 [HTTP] 
+2021-05-24 19:33:54:401 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:54:403 [HTTP] {}
+2021-05-24 19:33:54:410 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:54:411 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:54:412 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2021-05-24 19:33:54:413 [HTTP] 
+2021-05-24 19:33:56:425 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:56:429 [HTTP] {}
+2021-05-24 19:33:56:430 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:56:436 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:56:437 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:33:56:438 [HTTP] 
+2021-05-24 19:33:58:447 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:33:58:452 [HTTP] {}
+2021-05-24 19:33:58:453 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:33:58:459 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:33:58:465 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:33:58:470 [HTTP] 
+2021-05-24 19:34:00:467 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:34:00:469 [HTTP] {}
+2021-05-24 19:34:00:475 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:34:00:476 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:34:00:478 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:34:00:479 [HTTP] 
+2021-05-24 19:34:02:484 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:34:02:487 [HTTP] {}
+2021-05-24 19:34:02:494 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:34:02:498 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:34:02:500 [HTTP] <-- GET /wd/hub/status 200 16 ms - 68
+2021-05-24 19:34:02:501 [HTTP] 
+2021-05-24 19:34:04:504 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:34:04:506 [HTTP] {}
+2021-05-24 19:34:04:507 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:34:04:513 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:34:04:514 [HTTP] <-- GET /wd/hub/status 200 10 ms - 68
+2021-05-24 19:34:04:515 [HTTP] 
+2021-05-24 19:34:06:521 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:34:06:525 [HTTP] {}
+2021-05-24 19:34:06:531 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:34:06:532 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:34:06:533 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:34:06:534 [HTTP] 
+2021-05-24 19:34:08:546 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:34:08:549 [HTTP] {}
+2021-05-24 19:34:08:554 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:34:08:555 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:34:08:556 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
+2021-05-24 19:34:08:556 [HTTP] 
+2021-05-24 19:34:10:565 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:34:10:570 [HTTP] {}
+2021-05-24 19:34:10:576 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:34:10:577 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:34:10:582 [HTTP] <-- GET /wd/hub/status 200 13 ms - 68
+2021-05-24 19:34:10:587 [HTTP] 
+2021-05-24 19:34:12:592 [HTTP] --> GET /wd/hub/status
+2021-05-24 19:34:12:596 [HTTP] {}
+2021-05-24 19:34:12:598 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-05-24 19:34:12:603 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2021-05-24 19:34:12:607 [HTTP] <-- GET /wd/hub/status 200 12 ms - 68
+2021-05-24 19:34:12:614 [HTTP] 
+2021-05-24 19:34:13:577 [Appium] Received SIGINT - shutting down

@@ -31,10 +31,22 @@ from Utility import setCellData_path_in_script, get_Excel_data_path_in_script
 @pytest.mark.starters
 # @pytest.mark.usefixtures("log", "log_failure")
 # @pytest.mark.parametrize("FName, LName, UName, Eml, PWord, Email, Pd", get_Excel_data_path_in_script())
-def test_logosCheck(setup_function, log, log_failure, FName, LName, UName, Eml, PWord, Email, Pd):
+def test_chrome(setup_function_parallel):
     global driver
     global wait
-    driver = setup_function
+    driver = setup_function_parallel
+    driver.get("http://google.com")
+    driver.find_element(By.XPATH, readconfig("locatorChrome", "searchbox")).send_keys("facebook.com")
+    driver.press_keycode(66)
+    time.sleep(5)
+
+@pytest.mark.starters
+# @pytest.mark.usefixtures("log", "log_failure")
+# @pytest.mark.parametrize("FName, LName, UName, Eml, PWord, Email, Pd", get_Excel_data_path_in_script())
+def test_logosCheck(setup_function_parallel, log, log_failure, FName, LName, UName, Eml, PWord, Email, Pd):
+    global driver
+    global wait
+    driver = setup_function_parallel
     # driver.find_element(By.XPATH, "//android.widget.Button[@content-desc='Login']").click()
     loginIcons = driver.find_elements(AppiumBy.XPATH, "//android.widget.ImageView")
     pytest.assume(loginIcons[0].get_attribute("displayed") == "true"), "931 logo is not displayed"
@@ -44,6 +56,8 @@ def test_logosCheck(setup_function, log, log_failure, FName, LName, UName, Eml, 
     pytest.assume(driver.find_element(AppiumBy.CLASS_NAME, "android.widget.Button").is_displayed), "poweredBy is not displayed"
     appVersion = driver.find_element(AppiumBy.CLASS_NAME, "android.widget.Button").get_attribute("content-desc")
     print("931 application version is: " + appVersion)
+    setCellData(1,8,"consoles")
+    setCellData(2, 8, appVersion)
     # emailfield = wait.until(EC.presence_of_element_located((By.XPATH, readconfig("locatorLogin", "login_emailbox"))))
     emailfield = driver.find_element(By.XPATH, readconfig("locatorLogin", "login_emailbox"))
     # pwdfield = wait.until(EC.presence_of_element_located((By.XPATH, readconfig("locatorLogin", "login_passbox"))))
@@ -55,8 +69,8 @@ def test_logosCheck(setup_function, log, log_failure, FName, LName, UName, Eml, 
     cont_button.click()
     invalidbutton = driver.find_element(By.XPATH, readconfig("locatorLogin", "invalid_credentials"))
     invalidcred_error = invalidbutton.get_attribute("hint")
-    setCellData(1, 8, "Errors")
-    setCellData(2, 8, "invalid Credentials")
+    setCellData(1, 9, "Errors")
+    setCellData(2, 9, "invalid Credentials")
     invalidbutton.click()
     log.error("log message")
 
@@ -143,7 +157,7 @@ def test_forgot_password(setup_function,log_failure, FName, LName, UName, Eml, P
 
 @pytest.mark.usefixtures
 # @pytest.mark.parametrize("FName, LName, UName, Eml, PWord, Email, Pd", get_data())
-def test_login(setup_function,log_failure,FName, LName, UName, Eml, PWord, Email, Pd):
+def test_login(setup_function, log_failure,FName, LName, UName, Eml, PWord, Email, Pd):
     # global driver
     # driver = setup_function
     emailfield = driver.find_element(By.XPATH, "//android.widget.EditText")

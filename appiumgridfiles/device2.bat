@@ -1,0 +1,1 @@
+appium -p 4725 --udid 8e006adb --nodeconfig "C:\Users\WAY2AUTOMATION\Desktop\appiumgridfiles\all.json" -g "C:\Users\way2automation\Desktop\appiumgridfiles\appium_2.log" --session-override
