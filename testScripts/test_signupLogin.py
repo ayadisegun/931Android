@@ -40,6 +40,7 @@ def test_chrome(setup_function_parallel):
     driver.press_keycode(66)
     time.sleep(5)
 
+
 @pytest.mark.starters
 # @pytest.mark.usefixtures("log", "log_failure")
 # @pytest.mark.parametrize("FName, LName, UName, Eml, PWord, Email, Pd", get_Excel_data_path_in_script())

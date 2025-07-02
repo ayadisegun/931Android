@@ -8,6 +8,7 @@ totalrows =  sheet.max_row
 totalcols = sheet.max_column
 
 print("total rows are: ", str(totalrows), "and total column are: ", str(totalcols))
+
 #reading
 # print(sheet.cell(row=2, column=1).value)
 #

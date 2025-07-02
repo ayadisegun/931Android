@@ -1,0 +1,28 @@
+{
+  "capabilities": [
+    {
+      "platformName": "Android",
+      "appium:udid": "emulator-5554",
+      "appium:deviceName": "emulator-5554",
+      "appium:automationName": "UiAutomator2",
+      "appium:appPackage": "com.switchto931.mobile",
+      "appium:appActivity": ".MainActivity",
+      "maxInstances": 1,
+      "browserName": "Chrome"
+    }
+  ],
+  "configuration": {
+    "cleanUpCycle": 2000,
+    "timeout": 30000,
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "url": "http://127.0.0.1:4724/wd/hub",
+    "host": "127.0.0.1",
+    "port": 4723,
+    "maxSession": 1,
+    "register": true,
+    "registerCycle": 5000,
+    "hubPort": 4444,
+    "hubHost": "127.0.0.1",
+    "hubProtocol": "http"
+  }
+}

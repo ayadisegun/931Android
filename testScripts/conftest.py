@@ -1,3 +1,4 @@
+import inspect
 import logging
 import time
 from _ast import Assert
@@ -88,7 +89,7 @@ def setup_function_parallel(request):
             # 'appActivity': '.MainActivity',
             'noReset': True, }
         capabilities_options = UiAutomator2Options().load_capabilities(desired_caps)
-        driver = webdriver.Remote('http://127.0.0.1:4723', options=capabilities_options)
+        driver = webdriver.Remote('http://127.0.0.1:4444', options=capabilities_options)
     if request.param == "device2":
         desired_caps = {
                 'deviceName': 'Android',
@@ -102,7 +103,7 @@ def setup_function_parallel(request):
                 # 'appActivity': '.MainActivity',
                 'noReset': True, }
         capabilities_options = UiAutomator2Options().load_capabilities(desired_caps)
-        driver = webdriver.Remote('http://127.0.0.1:4724', options=capabilities_options)
+        driver = webdriver.Remote('http://127.0.0.1:4444', options=capabilities_options)
     driver.implicitly_wait(10)
     touch_actions = ActionChains(driver)
     global wait
@@ -382,3 +383,75 @@ def log():
 # def _capture_screenshot(file_name):
 #     driver.get_screenshot_as_file(file_name)
 
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    """
+    Extends the PyTest Plugin to take and embed screenshot in html report, whenever test fails.
+    :param item: The test item object
+    :param call: The call object from pytest (used to get outcome)
+    """
+    pytest_html = item.config.pluginmanager.getplugin('html')
+    outcome = yield
+    report = outcome.get_result()
+    extra = getattr(report, 'extra', [])
+
+    # Check if the test has failed or was skipped due to xfail
+    if report.when == 'call' or report.when == "setup":
+        xfail = hasattr(report, 'wasxfail')
+        if (report.skipped and xfail) or (report.failed and not xfail):
+            driver = None
+            try:
+                driver = item.funcargs.get('setup')
+            except Exception as e:
+                print(f"Could not retrieve driver from fixture: {e}")
+                driver = None
+
+            if driver:
+                # Define a directory for screenshots
+                screenshot_dir = "hook-screenshots"
+                os.makedirs(screenshot_dir, exist_ok=True) # Create directory if it doesn't exist
+
+                safe_nodeid = report.nodeid.replace("::", "__").replace("/", "_").replace("[", "_").replace("]", "_")
+                file_name = os.path.join(screenshot_dir, f"{safe_nodeid}.png")
+
+                try:
+                    driver.save_screenshot(file_name)
+                    print(f"Screenshot saved: {file_name}")
+
+                    if file_name:
+                        html = f'<div><img src="{file_name}" alt="screenshot" style="width:304px;height:228px;" ' \
+                               f'onclick="window.open(this.src)" align="right"/></div>'
+                        extra.append(pytest_html.extras.html(html))
+                except Exception as e:
+                    print(f"Failed to take screenshot: {e}")
+            else:
+                print("Driver not available for screenshot.")
+        report.extra = extra
+
+
+@pytest.fixture(scope="module")
+def get_logger():
+    """
+    Pytest fixture to provide a configured logger instance to tests.
+    The logger name will be the name of the test file/module that requests it.
+    """
+    logs_dir = "logs"
+    os.makedirs(logs_dir, exist_ok=True)
+
+    calling_module = inspect.getmodule(inspect.stack()[1][3])
+    logger_name = calling_module.__name__ if calling_module else "pytest_logger"
+    logger = logging.getLogger(logger_name)
+
+    if not logger.handlers:
+        log_file_path = os.path.join(logs_dir, f"{logger_name}.log")
+        file_handler = logging.FileHandler(log_file_path)
+        formatter = logging.Formatter("%(asctime)s : %(levelname)s : %(name)s : %(message)s")
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
+        logger.setLevel(logging.INFO)  # info, debug, warning, error, critical
+        # to print logs to console (optional)
+        console_handler = logging.StreamHandler()
+        console_handler.setFormatter(formatter)
+        logger.addHandler(console_handler)
+
+    yield logger
